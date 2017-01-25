@@ -1,3 +1,4 @@
+<%@ page import="com.applitools.teamcity.Constants" %>
 <%@ taglib prefix="props" tagdir="/WEB-INF/tags/props" %>
 <%@ taglib prefix="l" tagdir="/WEB-INF/tags/layout" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -11,6 +12,6 @@
 <tr id="applitoolsPlugin.serverURL.container">
     <th><label for="applitoolsPlugin.serverURL">Applitools URL:</label></th>
     <td>
-        <props:textProperty name="applitoolsPlugin.serverURL" value="https://eyes.applitools.com" />
+        <props:textProperty name="applitoolsPlugin.serverURL" value="<%= Constants.DEFAULT_APPLITOOLS_SERVER_URL %>"/>
     </td>
 </tr>
