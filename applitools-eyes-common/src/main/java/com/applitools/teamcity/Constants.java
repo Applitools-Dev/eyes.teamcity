@@ -9,6 +9,7 @@ public class Constants {
     /* Environment Variables */
     public static final String APPLITOOLS_PROJECT_SERVER_URL_ENV_VAR = "APPLITOOLS_PROJECT_SERVER_URL";
     public static final String APPLITOOLS_BATCH_ID_ENV_VAR = "APPLITOOLS_BATCH_ID";
+    public static final String APPLITOOLS_BATCH_NAME_ENV_VAR = "APPLITOOLS_BATCH_NAME";
 
     /* Applitools Settings Page */
     public static final String APPLITOOLS_PROJECT_SERVER_URL_BEAN_ID = "serverURL";
