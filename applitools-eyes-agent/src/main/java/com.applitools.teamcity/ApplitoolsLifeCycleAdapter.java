@@ -43,7 +43,8 @@ public class ApplitoolsLifeCycleAdapter extends AgentLifeCycleAdapter {
         String batchId = Common.generateBatchId(runningBuild.getBuildTypeId(), runningBuild.getBuildNumber(), runningBuild.getBuildId());
         addSharedEnvironmentVariable(runningBuild, Constants.APPLITOOLS_BATCH_ID_ENV_VAR, batchId);
 
-        addSharedEnvironmentVariable(runningBuild, Constants.APPLITOOLS_BATCH_NAME_ENV_VAR, runningBuild.getProjectName());
+        addSharedEnvironmentVariable(runningBuild, Constants.APPLITOOLS_BATCH_NAME_ENV_VAR,
+                runningBuild.getProjectName() + " / " + runningBuild.getBuildTypeName());
     }
 
     private void addSharedEnvironmentVariable(AgentRunningBuild runningBuild, String key, String value) {
