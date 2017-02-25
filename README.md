@@ -6,10 +6,10 @@ This plugin enables you to get Applitools' tests results directly inside your Te
 ![Applitools TeamCity Plugin Screenshot](/images/plugin-screenshot-small.png)
 
 ### TOC
-1. Installation
-2. Usage
-  1. Enabling Applitools Support.
-  2. Updating Your Tests Code.
+1. [Installation](#installation)
+2. [Usage (after the plugin is installed)](#usage)
+  1. [Enabling Applitools Support](#enabling-applitools-support)
+  2. [Updating Your Tests Code](#updating-your-tests-code)
 
 ### Installation
 1. Download the [Applitools Eyes Plugin zip file](https://bintray.com/applitools/CI/download_file?file_path=applitools-eyes.zip).
@@ -20,7 +20,7 @@ This plugin enables you to get Applitools' tests results directly inside your Te
 ![External plugins list with Applitools](/images/external-plugins-with-applitools.png)
 
 ### Usage
-#### Enabling Applitools Support (after the plugin is installed)
+#### Enabling Applitools Support 
 1. Go to your project's page and click on *Edit Project Settings* and click on the build configuration for which you want to add Applitools.
 1. Click on *Build Features* and add **Applitools Support**.
 1. If you have Applitools' private cloud or on-premise server, you can set the server URL in the *Applitools URL* setting.
