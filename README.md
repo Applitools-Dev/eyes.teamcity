@@ -42,4 +42,7 @@ if (batchId != null) {
 eyes.setBatch(batchInfo);
 ```
 
+Tests which will contain the above code, will show the Applitools results window inside TeamCity's tests results page (as can be seen in the screenshot at the top of this document).
+
+
 If you have any questions or need any assistance in using the plugin, feel free to contact Applitools support at: support [at] applitools dot com.
