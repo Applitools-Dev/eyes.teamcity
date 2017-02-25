@@ -9,7 +9,7 @@
     <email>team@applitools.com</email>
     <vendor>
       <name>Applitools</name>
-      <url>www.applitools.com</url>
+      <url>http://www.applitools.com</url>
     </vendor>
   </info>
   <deployment use-separate-classloader="true" />
