@@ -26,9 +26,9 @@ This plugin enables you to get Applitools' tests results directly inside your Te
 1. If you have Applitools' private cloud or on-premise server, you can set the server URL in the *Applitools URL* setting.
 
 #### Updating Your Tests Code
-The Applitools Plugin causes TeamCity to export the batch ID to the APPLITOOLS_BATCH_ID environment variable. You need to update your tests code to use this ID in order for your tests to appear in the Applitools window in the build results.
+The Applitools Plugin causes TeamCity to export the batch ID to the **APPLITOOLS_BATCH_ID** environment variable. You need to update your tests code to use this ID in order for your tests to appear in the Applitools window in the build results.
 
-In addition, TeamCity exports a suggested batch name to the APPLITOOLS_BATCH_NAME environment variable. Using this batch name is optional (the batch name is used for display purposes only).
+In addition, TeamCity exports a suggested batch name to the **APPLITOOLS_BATCH_NAME** environment variable. Using this batch name is optional (the batch name is used for display purposes only).
 
 Following is a Java code example:
 
