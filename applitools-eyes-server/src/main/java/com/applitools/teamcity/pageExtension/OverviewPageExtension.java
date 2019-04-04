@@ -28,17 +28,19 @@ public class OverviewPageExtension extends SimplePageExtension {
   public void fillModel(@NotNull Map<String, Object> model, @NotNull HttpServletRequest request)
   {
     super.fillModel(model, request);
-
-    final Long buildId;
-    buildId = Long.valueOf(request.getParameter("buildId"));
-    final SBuild sBuild = sBuildServer.findBuildInstanceById(buildId);
+    final SBuild sBuild = getBuild(request);
     model.put(Constants.APPLITOOLS_PROJECT_SERVER_URL_BEAN_ID, generateIframeURL(sBuild));
   }
 
   @Override
   public boolean isAvailable(@NotNull HttpServletRequest request)
   {
-    return true;
+    final SBuild sBuild = getBuild(request);
+    final SBuildFeatureDescriptor applitoolsBuildFeature = getApplitoolsBuildFeature(sBuild);
+    if (applitoolsBuildFeature != null) {
+       return sBuild.getBuildType().isEnabled(applitoolsBuildFeature.getId());
+    }
+    return false;
   }
 
   private String generateBatchId(SBuild sBuild) {
@@ -47,8 +49,13 @@ public class OverviewPageExtension extends SimplePageExtension {
 
   private String generateIframeURL(SBuild sBuild)
   {
-    String serverURL = getApplitoolsBuildFeature(sBuild).getParameters().get(Constants.APPLITOOLS_SERVER_URL_FIELD);
-    return serverURL + "/app/batchesnoauth/?startInfoBatchId=" + generateBatchId(sBuild) + "&hideBatchList=true&intercom=false";
+    try {
+      String serverURL = getApplitoolsBuildFeature(sBuild).getParameters().get(Constants.APPLITOOLS_SERVER_URL_FIELD);
+      return serverURL + "/app/batchesnoauth/?startInfoBatchId=" + generateBatchId(sBuild) + "&hideBatchList=true&intercom=false";
+    }
+    catch(NullPointerException exception) {
+      return "";
+    }
   }
 
   private SBuildFeatureDescriptor getApplitoolsBuildFeature(SBuild build) {
@@ -60,6 +67,12 @@ public class OverviewPageExtension extends SimplePageExtension {
       }
     }
     return null;
+  }
+
+  private SBuild getBuild(HttpServletRequest request) {
+    final Long buildId;
+    buildId = Long.valueOf(request.getParameter("buildId"));
+    return sBuildServer.findBuildInstanceById(buildId);
   }
 
 }
