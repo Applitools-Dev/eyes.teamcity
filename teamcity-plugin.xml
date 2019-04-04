@@ -2,7 +2,7 @@
 <teamcity-plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:schemas-jetbrains-com:teamcity-plugin-v1-xml">
   <info>
     <name>applitools-eyes</name>
-    <display-name>Applitools Eyes Plugin</display-name>
+    <display-name>Applitools Eyes Integration</display-name>
     <version>1.01</version>
     <description>This plugin adds Applitools Eyes test results to your TeamCity build report.</description>
     <download-url>https://bintray.com/applitools/CI/download_file?file_path=applitools-eyes.zip</download-url>
