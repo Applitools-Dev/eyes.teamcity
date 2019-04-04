@@ -4,7 +4,7 @@
   <parent>
     <artifactId>applitools-eyes</artifactId>
     <groupId>com.applitools.teamcity</groupId>
-    <version>1.0</version>
+    <version>1.1</version>
   </parent>
   <artifactId>applitools-eyes-common</artifactId>
   <packaging>jar</packaging>
