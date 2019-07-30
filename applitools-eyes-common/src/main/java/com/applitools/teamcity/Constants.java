@@ -10,7 +10,7 @@ public class Constants {
     public static final String APPLITOOLS_PROJECT_SERVER_URL_ENV_VAR = "APPLITOOLS_PROJECT_SERVER_URL";
     public static final String APPLITOOLS_BATCH_ID_ENV_VAR = "APPLITOOLS_BATCH_ID";
     public static final String APPLITOOLS_BATCH_NAME_ENV_VAR = "APPLITOOLS_BATCH_NAME";
-    public static final String APPLITOOLS_SEQUENCE_NAME_ENV_VAR = "APPLITOOLS_SEQUENCE_NAME";
+    public static final String APPLITOOLS_BATCH_SEQUENCE_ENV_VAR = "APPLITOOLS_BATCH_SEQUENCE";
 
 
     /* Applitools Settings Page */
