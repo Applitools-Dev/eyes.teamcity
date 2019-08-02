@@ -3,7 +3,7 @@
   <info>
     <name>applitools-eyes</name>
     <display-name>Applitools Eyes Integration</display-name>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <description>This plugin adds Applitools Eyes test results to your TeamCity build report.</description>
     <download-url>https://bintray.com/applitools/CI/download_file?file_path=applitools-eyes.zip</download-url>
     <email>team@applitools.com</email>
