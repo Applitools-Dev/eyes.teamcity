@@ -10,4 +10,5 @@
         <property name="pluginName" value="applitools-eyes"/>
         <property name="includeUrl" value="overviewPageExtension.jsp"/>
     </bean>
+    <bean id="ApplitoolsBuildServerAdapter" class="com.applitools.teamcity.serverEvents.ApplitoolsBuildServerAdapter" />
 </beans>

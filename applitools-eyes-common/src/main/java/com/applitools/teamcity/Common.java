@@ -10,4 +10,12 @@ public class Common {
         return Constants.APPLITOOLS_BATCH_ID_PREFIX + "-" + buildTypeId + "-" + buildNumber + "-" + Long.toString(buildId);
     }
 
+    public static String getServerUrl(String url) {
+        String res = url;
+        if (res == null || res.isEmpty()) {
+            res = Constants.DEFAULT_APPLITOOLS_SERVER_URL;
+        }
+        return res;
+    }
+
 }
