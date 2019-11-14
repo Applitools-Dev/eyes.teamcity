@@ -3,6 +3,8 @@ package com.applitools.teamcity;
 import jetbrains.buildServer.agent.*;
 import jetbrains.buildServer.log.Loggers;
 import jetbrains.buildServer.util.EventDispatcher;
+import jetbrains.buildServer.util.StringUtil;
+import jetbrains.buildServer.util.StringUtils;
 import org.jetbrains.annotations.NotNull;
 import java.lang.String;
 import java.util.Collection;
@@ -20,6 +22,7 @@ public class ApplitoolsLifeCycleAdapter extends AgentLifeCycleAdapter {
     @Override
     public void buildStarted(@NotNull AgentRunningBuild runningBuild) {
         super.buildStarted(runningBuild);
+        runningBuild.getBuildLogger().message("Build Started, setting Applitools environment variables:");
         Loggers.AGENT.info("Build Started, setting Applitools environment variables");
         Collection<AgentBuildFeature> features = runningBuild.getBuildFeaturesOfType(Constants.APPLITOOLS_BUILD_FEATURE_TYPE);
         if (features.isEmpty()) return;
@@ -30,14 +33,16 @@ public class ApplitoolsLifeCycleAdapter extends AgentLifeCycleAdapter {
 
     private String getApplitoolsURL(AgentBuildFeature feature) {
         String serverURL = feature.getParameters().get(Constants.APPLITOOLS_SERVER_URL_FIELD);
-        if (serverURL == null || serverURL.isEmpty()) {
-            serverURL = Constants.DEFAULT_APPLITOOLS_SERVER_URL;
-        }
-        return serverURL;
+        return Common.getServerUrl(serverURL);
     }
 
     private void populateEnvironmentVariables(AgentRunningBuild runningBuild, AgentBuildFeature feature) {
+        runningBuild.getBuildLogger().message("Creating Applitools environment variables:");
         Loggers.AGENT.info("Creating Applitools environment variables:");
+        String apiKey = feature.getParameters().get(Constants.APPLITOOLS_API_KEY_FIELD);
+        if (apiKey != null && !StringUtil.isEmpty(apiKey)) {
+            addSharedEnvironmentVariable(runningBuild, Constants.APPLITOOLS_API_KEY_ENV_VAR, apiKey);
+        }
         addSharedEnvironmentVariable(runningBuild, Constants.APPLITOOLS_PROJECT_SERVER_URL_ENV_VAR, getApplitoolsURL(feature));
 
         String batchId = Common.generateBatchId(runningBuild.getBuildTypeId(), runningBuild.getBuildNumber(), runningBuild.getBuildId());
@@ -48,10 +53,13 @@ public class ApplitoolsLifeCycleAdapter extends AgentLifeCycleAdapter {
 
         String sequenceName = runningBuild.getProjectName();
         addSharedEnvironmentVariable(runningBuild, Constants.APPLITOOLS_BATCH_SEQUENCE_ENV_VAR, sequenceName);
+
+        addSharedEnvironmentVariable(runningBuild, Constants.APPLITOOLS_DONT_CLOSE_BATCHES_ENV_VAR, "true");
     }
 
     private void addSharedEnvironmentVariable(AgentRunningBuild runningBuild, String key, String value) {
         if (value != null) {
+            runningBuild.getBuildLogger().message(key + " = " + value);
             Loggers.AGENT.info(key + " = " + value);
             runningBuild.addSharedEnvironmentVariable(key, value);
         }

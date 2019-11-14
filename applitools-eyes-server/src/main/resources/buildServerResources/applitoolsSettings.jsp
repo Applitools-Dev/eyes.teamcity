@@ -9,9 +9,24 @@
 <c:set var="applitoolsEnabled"
        value="${propertiesBean.properties['applitoolsPlugin.applitoolsEnabled']}"/>
 
+<tr id="applitoolsPlugin.apiKey.container">
+    <th><label for="applitoolsPlugin.apiKey">Applitools API key:</label></th>
+    <td>
+        <props:textProperty name="applitoolsPlugin.apiKey" value=""/>
+    </td>
+</tr>
+
 <tr id="applitoolsPlugin.serverURL.container">
     <th><label for="applitoolsPlugin.serverURL">Applitools URL:</label></th>
     <td>
         <props:textProperty name="applitoolsPlugin.serverURL" value="<%= Constants.DEFAULT_APPLITOOLS_SERVER_URL %>"/>
     </td>
 </tr>
+
+<tr id="applitoolsPlugin.notifyByCompletion.container">
+    <th><label for="applitoolsPlugin.notifyByCompletion">Notify by completion:</label></th>
+    <td>
+        <props:checkboxProperty name="applitoolsPlugin.notifyByCompletion"/>
+    </td>
+</tr>
+
