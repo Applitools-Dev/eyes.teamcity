@@ -11,4 +11,5 @@
         <property name="includeUrl" value="overviewPageExtension.jsp"/>
     </bean>
     <bean id="ApplitoolsBuildServerAdapter" class="com.applitools.teamcity.serverEvents.ApplitoolsBuildServerAdapter" />
+    <bean id="OverviewPageExtensionCSP" class="com.applitools.teamcity.pageExtension.OverviewPageExtensionCSP"/>
 </beans>
