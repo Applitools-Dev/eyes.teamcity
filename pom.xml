@@ -3,10 +3,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.applitools.teamcity</groupId>
   <artifactId>applitools-eyes</artifactId>
-  <version>1.1</version>
+  <version>1.2.2</version>
   <packaging>pom</packaging>
   <properties>
-      <teamcity-version>8.1.5</teamcity-version>
+      <teamcity-version>2019.1</teamcity-version>
   </properties>
   <repositories>
       <repository>

@@ -6,7 +6,7 @@
     <parent>
         <artifactId>applitools-eyes</artifactId>
         <groupId>com.applitools.teamcity</groupId>
-        <version>1.1</version>
+        <version>1.2.2</version>
     </parent>
     <artifactId>applitools-eyes-agent</artifactId>
     <packaging>jar</packaging>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.applitools.teamcity</groupId>
             <artifactId>applitools-eyes-common</artifactId>
-            <version>1.1</version>
+            <version>1.2.2</version>
             <scope>compile</scope>
         </dependency>
     <dependency>
