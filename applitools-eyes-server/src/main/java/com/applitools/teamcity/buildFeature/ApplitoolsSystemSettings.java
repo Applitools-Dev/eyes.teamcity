@@ -7,6 +7,8 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import java.lang.Override;
 import java.lang.String;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * The Applitools build feature settings.
@@ -35,5 +37,13 @@ public class ApplitoolsSystemSettings extends BuildFeature {
     @Override
     public String getEditParametersUrl() {
         return applitoolsPluginDescriptor.getPluginResourcesPath("applitoolsSettings.jsp");
+    }
+
+    @Nullable
+    @Override
+    public Map<String, String> getDefaultParameters() {
+        final HashMap<String, String> map = new HashMap<String, String>();
+        map.put("applitoolsPlugin.serverURL", Constants.DEFAULT_APPLITOOLS_SERVER_URL);
+        return map;
     }
 }

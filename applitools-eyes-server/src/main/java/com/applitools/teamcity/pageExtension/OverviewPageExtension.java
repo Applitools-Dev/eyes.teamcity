@@ -7,7 +7,11 @@ import com.applitools.teamcity.Common;
 import jetbrains.buildServer.serverSide.*;
 import jetbrains.buildServer.web.openapi.PagePlaces;
 import jetbrains.buildServer.web.openapi.SimplePageExtension;
+import org.apache.commons.httpclient.URI;
+import org.apache.commons.httpclient.URIException;
 import org.jetbrains.annotations.NotNull;
+
+import java.nio.charset.Charset;
 import java.util.Collection;
 import java.util.Map;
 import jetbrains.buildServer.util.EventDispatcher;
@@ -50,8 +54,16 @@ public class OverviewPageExtension extends SimplePageExtension {
   private String generateIframeURL(SBuild sBuild)
   {
     try {
-      String serverURL = getApplitoolsBuildFeature(sBuild).getParameters().get(Constants.APPLITOOLS_SERVER_URL_FIELD);
-      return serverURL + "/app/batchesnoauth/?startInfoBatchId=" + generateBatchId(sBuild) + "&hideBatchList=true&intercom=false";
+      String apiServerURL = getApplitoolsBuildFeature(sBuild).getParameters().get(Constants.APPLITOOLS_SERVER_URL_FIELD);
+      apiServerURL = apiServerURL + "/app/batchesnoauth/?startInfoBatchId=" + generateBatchId(sBuild) + "&hideBatchList=true&intercom=false";
+      try {
+        URI serverUrl = new URI(apiServerURL, true, Charset.forName("UTF-8").toString());
+        String hostName = serverUrl.getHost();
+        hostName = hostName.replaceAll("^([^.]+)api.(.*)$", "$1.$2");
+        return new URI(serverUrl.getScheme(), null, hostName, serverUrl.getPort(),serverUrl.getPath(), serverUrl.getQuery()).toString();
+      } catch (URIException e) {
+        return apiServerURL;
+      }
     }
     catch(NullPointerException exception) {
       return "";
