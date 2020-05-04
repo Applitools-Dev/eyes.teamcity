@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.applitools.teamcity</groupId>
             <artifactId>applitools-eyes-common</artifactId>
-            <version>1.2.2</version>
+            <version>1.2.3</version>
             <scope>compile</scope>
         </dependency>
     <dependency>
