@@ -6,7 +6,7 @@
     <parent>
         <artifactId>applitools-eyes</artifactId>
         <groupId>com.applitools.teamcity</groupId>
-        <version>1.2.2</version>
+        <version>1.2.3</version>
     </parent>
     <artifactId>applitools-eyes-agent</artifactId>
     <packaging>jar</packaging>

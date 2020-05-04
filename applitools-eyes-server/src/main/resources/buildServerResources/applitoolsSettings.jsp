@@ -12,14 +12,14 @@
 <tr id="applitoolsPlugin.apiKey.container">
     <th><label for="applitoolsPlugin.apiKey">Applitools API key:</label></th>
     <td>
-        <props:textProperty name="applitoolsPlugin.apiKey" value=""/>
+        <props:textProperty name="applitoolsPlugin.apiKey"/>
     </td>
 </tr>
 
 <tr id="applitoolsPlugin.serverURL.container">
     <th><label for="applitoolsPlugin.serverURL">Applitools URL:</label></th>
     <td>
-        <props:textProperty name="applitoolsPlugin.serverURL" value="<%= Constants.DEFAULT_APPLITOOLS_SERVER_URL %>"/>
+        <props:textProperty name="applitoolsPlugin.serverURL"/>
     </td>
 </tr>
 

@@ -26,7 +26,7 @@ public class Constants {
 
 
     /* Applitools Build Feature Common */
-    public static final String DEFAULT_APPLITOOLS_SERVER_URL = "https://eyes.applitools.com";
+    public static final String DEFAULT_APPLITOOLS_SERVER_URL = "https://eyesapi.applitools.com";
     public static final String APPLITOOLS_BATCH_ID_PREFIX = "teamcity";
     public static final String APPLITOOLS_BUILD_FEATURE_TYPE = "applitools";
     public static final String PLUGIN_ID = "applitools-eyes";
