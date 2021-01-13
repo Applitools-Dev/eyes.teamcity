@@ -1,3 +1,7 @@
+## [1.3.0] - 2021-01-13
+### Fixed
+- Updated iframe URL (internal)
+
 ## [1.2.3] - 2020-05-05
 ### Fixed
 - Use app server for results iframe. [Trello 1736](https://trello.com/c/RPhM6KOO/)
