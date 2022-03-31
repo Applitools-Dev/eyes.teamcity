@@ -12,7 +12,7 @@ This plugin enables you to get Applitools' tests results directly inside your Te
   2. [Updating Your Tests Code](#updating-your-tests-code)
 
 ### Installation
-1. Download the [Applitools Eyes Plugin zip file](https://bintray.com/applitools/CI/download_file?file_path=applitools-eyes.zip).
+1. Download the [latest version of the Applitools Eyes Plugin zip file](https://plugins.jetbrains.com/plugin/9441-applitools-eyes-integration/versions).
 1. Copy *applitools-eyes.zip* to your TeamCity's plugins folder (e.g, *~/.BuildServer/Plugins*).
 1. Restart TeamCity.
 1. From your TeamCity's *Projects* page go to: *Administration* -> *Plugins List*. You Should see the Applitools Eyes plugin under *External plugins*:
