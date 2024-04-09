@@ -30,3 +30,10 @@
     </td>
 </tr>
 
+<tr id="applitoolsPlugin.eyesScmIntegrationEnabled.container">
+    <th><label for="applitoolsPlugin.eyesScmIntegrationEnabled">Eyes SCM Integration Enabled:</label></th>
+    <td>
+        <props:checkboxProperty name="applitoolsPlugin.eyesScmIntegrationEnabled"/>
+    </td>
+</tr>
+

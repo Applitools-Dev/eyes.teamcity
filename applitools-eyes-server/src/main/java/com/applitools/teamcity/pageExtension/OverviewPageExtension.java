@@ -55,7 +55,7 @@ public class OverviewPageExtension extends SimplePageExtension {
   {
     try {
       String apiServerURL = getApplitoolsBuildFeature(sBuild).getParameters().get(Constants.APPLITOOLS_SERVER_URL_FIELD);
-      apiServerURL = apiServerURL + "/app/batchesnoauth/?startInfoBatchId=" + generateBatchId(sBuild) + "&hideBatchList=true&intercom=false&agentId=eyes-teamcity-1.3.0";
+      apiServerURL = apiServerURL + "/app/batchesnoauth/?startInfoBatchId=" + generateBatchId(sBuild) + "&hideBatchList=true&intercom=false&agentId=eyes-teamcity-1.4.0";
       try {
         URI serverUrl = new URI(apiServerURL, true, Charset.forName("UTF-8").toString());
         String hostName = serverUrl.getHost();
