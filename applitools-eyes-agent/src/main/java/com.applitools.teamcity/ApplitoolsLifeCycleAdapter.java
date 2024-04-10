@@ -47,7 +47,7 @@ public class ApplitoolsLifeCycleAdapter extends AgentLifeCycleAdapter {
         String serverUrl = Common.getServerUrl(feature.getParameters().get(Constants.APPLITOOLS_SERVER_URL_FIELD));
         String buildId = Common.generateBatchId(build.getBuildTypeId(), build.getBuildNumber(), build.getBuildId());
         String eyesScmIntegrationEnabled = feature.getParameters().get(Constants.APPLITOOLS_SCM_INTEGRATION_ENABLED_FIELD);
-        if (apiKey != null && !apiKey.isEmpty() && eyesScmIntegrationEnabled.equalsIgnoreCase("true")) {
+        if (apiKey != null && !apiKey.isEmpty() && "true".equalsIgnoreCase(eyesScmIntegrationEnabled)) {
             String batchId = feature.getParameters().get(Constants.APPLITOOLS_BATCH_ID_ENV_VAR);
             if (batchId == null || batchId.isEmpty()){
                 System.getenv(Constants.APPLITOOLS_BATCH_ID_ENV_VAR);
