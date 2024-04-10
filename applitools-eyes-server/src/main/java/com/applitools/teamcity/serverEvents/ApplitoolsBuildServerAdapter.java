@@ -2,7 +2,10 @@ package com.applitools.teamcity.serverEvents;
 
 import com.applitools.teamcity.Common;
 import com.applitools.teamcity.Constants;
-import jetbrains.buildServer.serverSide.*;
+import jetbrains.buildServer.serverSide.BuildServerAdapter;
+import jetbrains.buildServer.serverSide.BuildServerListener;
+import jetbrains.buildServer.serverSide.SBuildFeatureDescriptor;
+import jetbrains.buildServer.serverSide.SRunningBuild;
 import jetbrains.buildServer.serverSide.buildLog.BuildLog;
 import jetbrains.buildServer.util.EventDispatcher;
 import org.apache.commons.httpclient.HttpClient;

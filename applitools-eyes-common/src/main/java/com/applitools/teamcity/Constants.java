@@ -17,12 +17,10 @@ public class Constants {
 
     /* Applitools Settings Page */
     public static final String APPLITOOLS_PROJECT_SERVER_URL_BEAN_ID = "serverURL";
-    public static final String APPLITOOLS_API_KEY_BEAN_ID = "apiKey";
-    public static final String APPLITOOLS_NOTIFY_BY_COMPLETION_BEAN_ID = "notifyByCompletion";
-
     public static final String APPLITOOLS_SERVER_URL_FIELD = "applitoolsPlugin.serverURL";
     public static final String APPLITOOLS_API_KEY_FIELD = "applitoolsPlugin.apiKey";
     public static final String APPLITOOLS_NOTIFY_BY_COMPLETION_FIELD = "applitoolsPlugin.notifyByCompletion";
+    public static final String APPLITOOLS_SCM_INTEGRATION_ENABLED_FIELD = "applitoolsPlugin.eyesScmIntegrationEnabled";
 
 
     /* Applitools Build Feature Common */
@@ -32,6 +30,7 @@ public class Constants {
     public static final String PLUGIN_ID = "applitools-eyes";
 
     public static final String BATCH_NOTIFICATION_PATH = "/api/sessions/batches/%s/close/bypointerid";
+    public final static String BATCH_BIND_POINTERS_PATH = "/api/sessions/batches/bindpointers/%s";
 
 
     private Constants() {

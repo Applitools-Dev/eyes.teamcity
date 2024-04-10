@@ -1,3 +1,7 @@
+## [1.4.0] - 2024-04-09
+### Added
+- Eyes SCM integration support. [Trello 2762](https://trello.com/c/cSzKPuZn/)
+
 ## [1.3.0] - 2021-01-13
 ### Fixed
 - Updated iframe URL (internal)
