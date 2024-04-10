@@ -59,11 +59,11 @@ public class ApplitoolsLifeCycleAdapter extends AgentLifeCycleAdapter {
             HttpClient httpClient = new HttpClient();
             try {
                 URI targetUrl = new URI(serverUrl, false);
-                targetUrl.setPath(String.format(Constants.BATCH_BIND_POINTERS_PATH, buildId));
+                targetUrl.setPath(String.format(Constants.BATCH_BIND_POINTERS_PATH, batchId));
                 targetUrl.setQuery("apiKey=" + apiKey);
                 PostMethod postRequest = new PostMethod(targetUrl.toString());
                 try {
-                    RequestEntity reqEnt = new StringRequestEntity("{\"secondaryBatchPointerId\":\"" + batchId + "\"}", "application/json", "UTF-8");
+                    RequestEntity reqEnt = new StringRequestEntity("{\"secondaryBatchPointerId\":\"" + buildId + "\"}", "application/json", "UTF-8");
                     postRequest.setRequestEntity(reqEnt);
                     Loggers.AGENT.info(String.format("Binding build id %s to batch id %s", buildId, batchId));
                     int statusCode = httpClient.executeMethod(postRequest);
