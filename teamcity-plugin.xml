@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<teamcity-plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:schemas-jetbrains-com:teamcity-plugin-v1-xml">
+<teamcity-plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:noNamespaceSchemaLocation="urn:schemas-jetbrains-com:teamcity-plugin-v1-xml">
   <info>
     <name>applitools-eyes</name>
     <display-name>Applitools Eyes Integration</display-name>
@@ -10,6 +11,7 @@
     <vendor>
       <name>Applitools</name>
       <url>http://www.applitools.com</url>
+      <logo>https://applitools.github.io/demo/images/applitools_logo_gravatar.svg</logo>
     </vendor>
   </info>
   <deployment use-separate-classloader="true" />

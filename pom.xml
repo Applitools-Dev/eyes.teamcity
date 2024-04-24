@@ -1,62 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.applitools.teamcity</groupId>
   <artifactId>applitools-eyes</artifactId>
   <version>1.4.0</version>
   <packaging>pom</packaging>
   <properties>
-      <teamcity-version>2019.1</teamcity-version>
+    <teamcity-version>2019.1</teamcity-version>
   </properties>
   <repositories>
-      <repository>
-          <id>jetbrains-all</id>
-          <url>https://download.jetbrains.com/teamcity-repository</url>
-      </repository>
     <repository>
-        <id>JetBrains</id>
-        <url>http://repository.jetbrains.com/all</url>
+      <id>JetBrains</id>
+      <url>https://download.jetbrains.com/teamcity-repository</url>
     </repository>
   </repositories>
   <pluginRepositories>
-      <pluginRepository>
-          <id>JetBrains</id>
-          <url>http://repository.jetbrains.com/all</url>
-      </pluginRepository>
+    <pluginRepository>
+      <id>JetBrains</id>
+      <url>https://download.jetbrains.com/teamcity-repository</url>
+    </pluginRepository>
   </pluginRepositories>
-    <scm>
-        <connection>scm:git:git://github.com/applitools/eyes.teamcity.git</connection>
-        <developerConnection>scm:git:git@github.com/applitools/eyes.teamcity.git</developerConnection>
-        <url>github.com/applitools/eyes.teamcity.git</url>
-    </scm>
-  <build>
-      <pluginManagement>
-          <plugins>
-              <plugin>
-                  <groupId>org.apache.maven.plugins</groupId>
-                  <artifactId>maven-compiler-plugin</artifactId>
-                  <configuration>
-                      <source>8</source>
-                      <target>8</target>
-                      <debug>true</debug>
-                      <debuglevel>lines,vars,source</debuglevel>
-                  </configuration>
-              </plugin>
-              <plugin>
-                  <groupId>org.jetbrains.teamcity</groupId>
-                  <artifactId>teamcity-sdk-maven-plugin</artifactId>
-                  <version>RELEASE</version>
-                  <configuration>
-                      <!-- <teamcityDir>/path/to/tc/distro</teamcityDir> -->
-                  </configuration>
-              </plugin>
-          </plugins>
-      </pluginManagement>
-  </build>
+  <scm>
+    <connection>scm:git:git://github.com/applitools/eyes.teamcity.git</connection>
+    <developerConnection>scm:git:git@github.com/applitools/eyes.teamcity.git</developerConnection>
+    <url>github.com/applitools/eyes.teamcity.git</url>
+  </scm>
   <modules>
-      <module>applitools-eyes-server</module>
-      <module>applitools-eyes-agent</module>
-      <module>applitools-eyes-common</module>
-      <module>build</module>
+    <module>applitools-eyes-server</module>
+    <module>applitools-eyes-agent</module>
+    <module>applitools-eyes-common</module>
+    <module>build</module>
   </modules>
 </project>
