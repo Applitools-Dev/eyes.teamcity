@@ -6,33 +6,33 @@
     <format>zip</format>
   </formats>
   <files>
-     <file>
-         <source>target/teamcity-plugin.xml</source>
-         <outputDirectory>/</outputDirectory>
-     </file>
-      <file>
-          <source>target/teamcity-agent.zip</source>
-          <outputDirectory>agent</outputDirectory>
-      </file>
+    <file>
+      <source>target/teamcity-plugin.xml</source>
+      <outputDirectory>/</outputDirectory>
+    </file>
+    <file>
+      <source>target/applitools-eyes-agent.zip</source>
+      <outputDirectory>agent</outputDirectory>
+    </file>
   </files>
   <moduleSets>
     <moduleSet>
-       <useAllReactorProjects>true</useAllReactorProjects>
-       <includes>
-           <include>com.applitools.teamcity:applitools-eyes-server</include>
-           <include>com.applitools.teamcity:applitools-eyes-common</include>
-       </includes>
-       <binaries>
-           <outputDirectory>server</outputDirectory>
-           <unpack>false</unpack>
-           <dependencySets>
-               <dependencySet>
-                    <includes>
-                         <include>*</include>
-                    </includes>
-               </dependencySet>
-           </dependencySets>
-       </binaries>
+      <useAllReactorProjects>true</useAllReactorProjects>
+      <includes>
+        <include>com.applitools.teamcity:applitools-eyes-server</include>
+        <include>com.applitools.teamcity:applitools-eyes-common</include>
+      </includes>
+      <binaries>
+        <outputDirectory>server</outputDirectory>
+        <unpack>false</unpack>
+        <dependencySets>
+          <dependencySet>
+            <includes>
+              <include>*</include>
+            </includes>
+          </dependencySet>
+        </dependencySets>
+      </binaries>
     </moduleSet>
   </moduleSets>
 </assembly>
