@@ -27,7 +27,6 @@ public class TeamCityServerTest {
 
         // Set up Applitools Eyes
         eyes = new Eyes();
-        eyes.setApiKey(System.getenv("APPLITOOLS_API_KEY"));
         eyes.setStitchMode(StitchMode.SCROLL);
     }
 
