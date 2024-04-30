@@ -28,3 +28,6 @@ jobs:
 
     - name: Copy plugin to Docker container
       run: docker cp target/applitools-eyes.zip teamcity_container:/data/teamcity_server/datadir/plugins/
+      
+    - name: Run tests
+      run: mvn test
