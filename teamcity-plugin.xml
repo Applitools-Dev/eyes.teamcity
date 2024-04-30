@@ -10,6 +10,7 @@
     <vendor>
       <name>Applitools</name>
       <url>http://www.applitools.com</url>
+      <logo>https://applitools.github.io/demo/images/applitools_logo_gravatar.svg</logo>
     </vendor>
   </info>
   <deployment use-separate-classloader="true" />
