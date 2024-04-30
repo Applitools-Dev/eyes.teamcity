@@ -28,15 +28,7 @@ jobs:
 
     - name: Copy plugin to Docker container
       run: |
-        echo "local files and folders"
-        ls -l
-        ls -l target
-        echo "docker files and folders"
-        docker exec -it teamcity_container ls -l /data/
-        docker exec -it teamcity_container ls -l /data/teamcity_server/
-        docker exec -it teamcity_container ls -l /data/teamcity_server/datadir/
-        docker exec -it teamcity_container ls -l /data/teamcity_server/datadir/plugins/
-        echo "copying plugin to docker container"
+        docker exec teamcity_container mkdir -p /data/teamcity_server/datadir/plugins/
         docker cp target/applitools-eyes.zip teamcity_container:/data/teamcity_server/datadir/plugins/
       
     - name: Run tests
