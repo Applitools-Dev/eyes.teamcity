@@ -1,4 +1,4 @@
-name: Build and Deploy to TeamCity
+name: Build and Test
 
 on:
   workflow_dispatch:
