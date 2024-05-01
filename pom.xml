@@ -58,5 +58,6 @@
       <module>applitools-eyes-agent</module>
       <module>applitools-eyes-common</module>
       <module>build</module>
+      <module>tests</module>
   </modules>
 </project>
