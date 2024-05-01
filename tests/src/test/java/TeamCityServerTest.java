@@ -23,7 +23,9 @@ public class TeamCityServerTest {
         teamCityContainer.start();
 
         // Set up WebDriver
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
 
         // Set up Applitools Eyes
         eyes = new Eyes();
