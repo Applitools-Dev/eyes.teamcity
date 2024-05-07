@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Cleanup</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../index.html">
+                            TeamCity Kotlin DSL
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">JVM</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="TeamCity Kotlin DSL::jetbrains.buildServer.configs.kotlin/Cleanup///PointingToDeclaration//1411724783">
+  <div class="breadcrumbs"><a href="../../index.html">TeamCity Kotlin DSL</a><span class="delimiter">/</span><a href="../index.html">jetbrains.buildServer.configs.kotlin</a><span class="delimiter">/</span><span class="current">Cleanup</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Cleanup</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">Cleanup</a></div><p class="paragraph">Specifies <a href="https://www.jetbrains.com/help/teamcity/?Clean-Up">clean-up rules</a> for <a href="../project/index.html">project</a>, <a href="../build-type/index.html">build configuration</a>, or <a href="../template/index.html">template</a></p><p class="paragraph"><strong>Example.</strong> Keep all builds finished within 5 days after the last build</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">cleanup {<br>    keepRule {<br>        id = &quot;MyCleanupRule&quot;<br>        keepAtLeast = days(5) {<br>            since = lastBuild()<br>        }<br>        dataToKeep = everything()<br>        applyPerEachBranch = true<br>        preserveArtifactsDependencies = true<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">This cleanup rule tells TeamCity to keep all the builds which were fiished within 5 days since the last build.</p><p class="paragraph">The builds are kept per each branch individually.</p><p class="paragraph"><strong>Example.</strong> Keep not more than 10 personal builds</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">cleanup {<br>    keepRule {<br>        id = &quot;Keep10PersonalBuilds&quot;<br>        keepAtLeast = builds(10)<br>        applyToBuilds {<br>            inPersonalBuilds = onlyPersonal()<br>        }<br>        dataToKeep = everything()<br>        preserveArtifactsDependencies = true<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Note: this should not be the only cleanup rule in the project, otherwise all other non-personal builds will be removed.</p><p class="paragraph"><strong>Example.</strong> Keep per-build statistics data for every build produced within 365 days since the last build</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">cleanup {<br>    keepRule {<br>        id = &quot;KeepStatisticsFor1Year&quot;<br>        keepAtLeast = days(365) {<br>          since = lastBuild()<br>        }<br>        dataToKeep = statisticsOnly()<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Note: dataToKeep = statisticsOnly() means that only <a href="https://www.jetbrains.com/help/teamcity/custom-chart.html#Default+Statistics+Values+Provided+by+TeamCity">statistic values</a> will be preserved for the builds, everything else, like build logs, artifacts and the build itself will be removed. Preserved statistics values still allow to show data on the <a href="https://www.jetbrains.com/help/teamcity/custom-chart.html">custom charts</a> for such builds.</p><p class="paragraph"><strong>Example.</strong> Sets custom <a href="https://www.jetbrains.com/help/teamcity/?Clean-Up#Base+Rule">base cleanup rules</a> options.</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">cleanup {<br>    baseRule {<br>        history(builds = 3, days = 5)<br>        artifacts(builds = 3, days = 5, artifactPatterns = &quot;+:log*&quot;)<br>        preventDependencyCleanup = true<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1473165632%2FConstructors%2F1411724783" anchor-label="Cleanup" id="1473165632%2FConstructors%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="cleanup.html"><span><span>Cleanup</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1473165632%2FConstructors%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1984559055%2FClasslikes%2F1411724783" anchor-label="BaseRuleWrapper" id="-1984559055%2FClasslikes%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="base-rule-wrapper/index.html"><span>Base</span><wbr></wbr><span>Rule</span><wbr></wbr><span><span>Wrapper</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1984559055%2FClasslikes%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">inner </span><span class="token keyword">class </span><a href="base-rule-wrapper/index.html">BaseRuleWrapper</a></div><div class="brief "><p class="paragraph">Holds a <a href="https://www.jetbrains.com/help/teamcity/?Clean-Up#Clean-Up-BaseRule">base rule</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1308419658%2FClasslikes%2F1411724783" anchor-label="KeepRule" id="1308419658%2FClasslikes%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="keep-rule/index.html"><span>Keep</span><wbr></wbr><span><span>Rule</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1308419658%2FClasslikes%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="keep-rule/index.html">KeepRule</a></div><div class="brief "><p class="paragraph">Specifies a <a href="https://www.jetbrains.com/help/teamcity/?Clean-Up#Clean-Up-KeepRule">keep rule</a>. A keep rule defines what particular data to preserve during the clean-up. Multiple keep rules can be assigned to a project or build configuration.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1484213934%2FProperties%2F1411724783" anchor-label="keepRules" id="-1484213934%2FProperties%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="keep-rules.html"><span>keep</span><wbr></wbr><span><span>Rules</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1484213934%2FProperties%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="keep-rules.html">keepRules</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html">ArrayList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="keep-rule/index.html">Cleanup.KeepRule</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2042057813%2FProperties%2F1411724783" anchor-label="preventDependencyCleanup" id="2042057813%2FProperties%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="prevent-dependency-cleanup.html"><span>prevent</span><wbr></wbr><span>Dependency</span><wbr></wbr><span><span>Cleanup</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2042057813%2FProperties%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="prevent-dependency-cleanup.html">preventDependencyCleanup</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Specifies whether <a href="https://www.jetbrains.com/help/teamcity/?Clean-Up#Clean-Up-BaseRuleBehaviorforDependencyBuilds">dependency builds should be cleaned</a>. Null means use default, true means prevent clean-up, false means don't prevent clean-up.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1846224648%2FFunctions%2F1411724783" anchor-label="all" id="1846224648%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="all.html"><span><span>all</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1846224648%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="all.html"><span class="token function">all</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">days<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">builds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Adds an <a href="https://www.jetbrains.com/help/teamcity/?Clean-Up#Clean-Up-Clean-upRules">'everything'-level</a> clean-up rule. Either <a href="all.html">days</a> or <a href="all.html">builds</a> must be non-null. If they are both null, clean-up will not be configured.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-953588202%2FFunctions%2F1411724783" anchor-label="artifacts" id="-953588202%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="artifacts.html"><span><span>artifacts</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-953588202%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="artifacts.html"><span class="token function">artifacts</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">days<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">builds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">artifactPatterns<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Adds an <a href="https://www.jetbrains.com/help/teamcity/?Clean-Up#Clean-Up-Clean-upRules">artifacts-level</a> clean-up rule. Either <a href="artifacts.html">days</a> or <a href="artifacts.html">builds</a> must be non-null. If they are both null, clean-up will not be configured.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="107081473%2FFunctions%2F1411724783" anchor-label="baseRule" id="107081473%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="base-rule.html"><span>base</span><wbr></wbr><span><span>Rule</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="107081473%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="base-rule.html"><span class="token function">baseRule</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="base-rule-wrapper/index.html">Cleanup.BaseRuleWrapper</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Specifies a <a href="https://www.jetbrains.com/help/teamcity/?Clean-Up#Clean-Up-BaseRule">base rule</a>. A base rule defines what data to clean up in general. Allows preserving a specified number of successful builds and/or choose the time period to keep builds in the history.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-28228674%2FFunctions%2F1411724783" anchor-label="copy" id="-28228674%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../copy.html"><span><span>copy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-28228674%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">Cleanup</a><span class="token punctuation">.</span><a href="../copy.html"><span class="token function">copy</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Cleanup</a></div><div class="brief "><p class="paragraph">Copies the receiver cleanup</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1844572698%2FFunctions%2F1411724783" anchor-label="copyTo" id="1844572698%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../copy-to.html"><span>copy</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1844572698%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">Cleanup</a><span class="token punctuation">.</span><a href="../copy-to.html"><span class="token function">copyTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">target<span class="token operator">: </span><a href="index.html">Cleanup</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Cleanup</a></div><div class="brief "><p class="paragraph">Copies the receiver cleanup to the specified target</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-600153538%2FFunctions%2F1411724783" anchor-label="disableKeepRule" id="-600153538%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="disable-keep-rule.html"><span>disable</span><wbr></wbr><span>Keep</span><wbr></wbr><span><span>Rule</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-600153538%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="disable-keep-rule.html"><span class="token function">disableKeepRule</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">rule<span class="token operator">: </span><a href="keep-rule/index.html">Cleanup.KeepRule</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Disables an inherited keep rule</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="disable-keep-rule.html"><span class="token function">disableKeepRule</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">idToDisable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Disables an inherited keep rule by its ID</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-189329510%2FFunctions%2F1411724783" anchor-label="findKeepRuleById" id="-189329510%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="find-keep-rule-by-id.html"><span>find</span><wbr></wbr><span>Keep</span><wbr></wbr><span>Rule</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-189329510%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="find-keep-rule-by-id.html"><span class="token function">findKeepRuleById</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="keep-rule/index.html">Cleanup.KeepRule</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Finds a keep rule with the specified <a href="find-keep-rule-by-id.html">id</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1365281659%2FFunctions%2F1411724783" anchor-label="history" id="1365281659%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="history.html"><span><span>history</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1365281659%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="history.html"><span class="token function">history</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">days<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">builds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Adds a <a href="https://www.jetbrains.com/help/teamcity/?Clean-Up#Clean-Up-Clean-upRules">history-level</a> clean-up rule. Either <a href="history.html">days</a> or <a href="history.html">builds</a> must be non-null. If they are both null, clean-up will not be configured.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-472808276%2FFunctions%2F1411724783" anchor-label="keepRule" id="-472808276%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="keep-rule.html"><span>keep</span><wbr></wbr><span><span>Rule</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-472808276%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="keep-rule.html"><span class="token function">keepRule</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="keep-rule/index.html">Cleanup.KeepRule</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="keep-rule/index.html">Cleanup.KeepRule</a></div><div class="brief "><p class="paragraph">Creates and registeres a new keep rule for this clean-up definition. IDs must be specified for all keep rules.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1846027009%2FFunctions%2F1411724783" anchor-label="option" id="1846027009%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="option.html"><span><span>option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1846027009%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="option.html"><span class="token function">option</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Adds a specified clean-up option</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-845866211%2FFunctions%2F1411724783" anchor-label="validate" id="-845866211%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="validate.html"><span><span>validate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-845866211%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="validate.html"><span class="token function">validate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">consumer<span class="token operator">: </span><a href="../error-consumer/index.html">ErrorConsumer</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

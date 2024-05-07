@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<installed-tools>
+  <tool tool-id="maven3_1" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_SKIPPED" skip-reason="TOOL_USAGES_NOT_FOUND" />
+  <tool tool-id="maven3_2" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_SKIPPED" skip-reason="TOOL_USAGES_NOT_FOUND" />
+  <tool tool-id="maven3_5" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_SKIPPED" skip-reason="TOOL_USAGES_NOT_FOUND" />
+  <tool tool-id="maven3_6" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_SKIPPED" skip-reason="TOOL_USAGES_NOT_FOUND" />
+  <tool tool-id="maven" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_SKIPPED" skip-reason="TOOL_USAGES_NOT_FOUND" />
+  <tool tool-id="maven3" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_SKIPPED" skip-reason="TOOL_USAGES_NOT_FOUND" />
+  <tool tool-id="maven3_3" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_SKIPPED" skip-reason="TOOL_USAGES_NOT_FOUND" />
+  <tool tool-id="idea" tool-type="intellij" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_COMPLETED" tool-original-id="intellij.ideaIU-2022.1.3" is-bundled="true" original-name="intellij-tool-ideaIU-2022.1.3.zip" original-length="844518275" original-last-modified="1715091893700" packed-content-hash="SHA-1mFhfiRdD0D2zpN6/2APaBPBw6f0=" />
+  <tool tool-id="maven3_9" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_COMPLETED" tool-original-id="maven.3.9.6" is-bundled="true" original-name="apache-maven-3.9.6-bin.tar.gz" original-length="9410508" original-last-modified="1715091826691" packed-content-hash="SHA-1RB4sCO0TXmbb5Ij7H82Rqvxdrdg=" />
+  <tool tool-id="maven3_8" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_SKIPPED" skip-reason="TOOL_USAGES_NOT_FOUND" />
+</installed-tools>
+

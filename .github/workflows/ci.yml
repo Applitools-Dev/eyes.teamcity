@@ -23,12 +23,10 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml -DskipTests
 
-    - name: Build Docker image
+    - name: Run Docker image
       run: | 
-        cp -r target tests/docker
-        cd tests
-        docker build -t teamcity_container .
-        docker run -d -p 8111:8111 --name teamcity_container teamcity_container
+        chmod -R 777 tests/docker
+        docker run -d -p 8111:8111 -v tests/docker:/data/teamcity_server/datadir --name=teamcity_server jetbrains/teamcity-server:2024.03.1-linux
       
     - name: Run tests
       run: |

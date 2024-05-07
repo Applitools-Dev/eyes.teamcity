@@ -1,0 +1,44 @@
+<root>
+  <page path="/admin/createObjectMenu.html">
+    <usage userId="1" timestamp="1715091854412" />
+  </page>
+  <page path="/admin/editProject.html">
+    <usage userId="1" timestamp="1715092035190" />
+  </page>
+  <page path="/admin/discoverRunners.html">
+    <usage userId="1" timestamp="1715091935854" />
+  </page>
+  <page path="/admin/admin.html">
+    <usage userId="1" timestamp="1715092030092" />
+  </page>
+  <page path="/admin/editBuildRunners.html">
+    <usage userId="1" timestamp="1715091965946" />
+  </page>
+  <page path="/admin/createObjectFromUrl.html">
+    <usage userId="1" timestamp="1715091855304" />
+  </page>
+  <page path="/admin/editBuildFeatures.html">
+    <usage userId="1" timestamp="1715092089753" />
+  </page>
+  <page path="/admin/editBuild.html">
+    <usage userId="1" timestamp="1715092055932" />
+  </page>
+  <page path="/admin/buildTypeHealthStatusItems.html">
+    <usage userId="1" timestamp="1715092090462" />
+  </page>
+  <page path="/admin/projectHealthStatusItems.html">
+    <usage userId="1" timestamp="1715092036035" />
+  </page>
+  <page path="/admin/objectSetup.html">
+    <usage userId="1" timestamp="1715091909294" />
+  </page>
+  <page path="/404.html">
+    <usage userId="1" timestamp="1715091954162" />
+  </page>
+  <page path="/favorite/projects">
+    <usage userId="1" timestamp="1715092106273" />
+  </page>
+  <page path="/admin/editRunType.html">
+    <usage userId="1" timestamp="1715091953294" />
+  </page>
+</root>

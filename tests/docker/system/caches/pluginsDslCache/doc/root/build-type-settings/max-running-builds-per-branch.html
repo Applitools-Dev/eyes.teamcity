@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>maxRunningBuildsPerBranch</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../index.html">
+                            TeamCity Kotlin DSL
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">JVM</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="TeamCity Kotlin DSL::jetbrains.buildServer.configs.kotlin/BuildTypeSettings/maxRunningBuildsPerBranch/#/PointingToDeclaration//1411724783">
+  <div class="breadcrumbs"><a href="../../index.html">TeamCity Kotlin DSL</a><span class="delimiter">/</span><a href="../index.html">jetbrains.buildServer.configs.kotlin</a><span class="delimiter">/</span><a href="index.html">BuildTypeSettings</a><span class="delimiter">/</span><span class="current">maxRunningBuildsPerBranch</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>max</span><wbr></wbr><span>Running</span><wbr></wbr><span>Builds</span><wbr></wbr><span>Per</span><wbr></wbr><span><span>Branch</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="max-running-builds-per-branch.html">maxRunningBuildsPerBranch</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><p class="paragraph">Allows to set <a href="https://www.jetbrains.com/help/teamcity/configuring-general-settings.html#Limit+Number+of+Simultaneously+Running+Builds">maximum number of simultaneously running builds per branch</a>. Each line must be in form of branch:number, where branch is either a logical branch name or a pattern containing and number specifies the maximum number of builds which can be simultaneously running in each branch matching the pattern. 0 means there is no limit.</p><p class="paragraph"><strong>Example.</strong> Limit number of concurrent builds in the default branch to 1</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">maxRunningBuildsPerBranch = &quot;&lt;default&gt;:1&quot;</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph"><strong>Example.</strong> Different rules for different branch names</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">maxRunningBuildsPerBranch = &quot;&quot;&quot;<br>  &lt;default&gt;:0<br>  feature/*:1<br>&quot;&quot;&quot;.trimIndent()</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><pre style='display:none'>*/</pre><p class="paragraph">The rule above limits all the builds from the branches starting with &quot;feature&quot; prefix to 1, which means for each such a branch only one build can run at the same time, all other builds will sit in the queue. At the same time there is no limit for the builds from the default branch.</p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2022.04</p></span></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

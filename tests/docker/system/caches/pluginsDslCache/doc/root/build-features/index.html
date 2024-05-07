@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>BuildFeatures</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../index.html">
+                            TeamCity Kotlin DSL
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">JVM</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="TeamCity Kotlin DSL::jetbrains.buildServer.configs.kotlin/BuildFeatures///PointingToDeclaration//1411724783">
+  <div class="breadcrumbs"><a href="../../index.html">TeamCity Kotlin DSL</a><span class="delimiter">/</span><a href="../index.html">jetbrains.buildServer.configs.kotlin</a><span class="delimiter">/</span><span class="current">BuildFeatures</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Build</span><wbr></wbr><span><span>Features</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">BuildFeatures</a> : <a href="../validatable/index.html">Validatable</a></div><p class="paragraph">Collection of <a href="../build-feature/index.html">build features</a> in <a href="../build-type/index.html">build configuration</a> or <a href="../template/index.html">template</a>.</p><p class="paragraph"><strong>Example.</strong> Add approval to the build</p><p class="paragraph">See also <a href="../../buildFeatures/approval/index.html">Approval</a></p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">features {<br>    approval {<br>        approvalRules = &quot;user:qa&quot;<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph"><strong>Example.</strong> Import test results into TeamCity from the JUnix test results XML files</p><p class="paragraph">See also <a href="../../buildFeatures/xml-report/index.html">XML report processing</a></p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">features {<br>    xmlReport {<br>        reportType = XmlReport.XmlReportType.JUNIT<br>        rules = &quot;test-reports/**.xml&quot;<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><pre style='display:none'>*/</pre><p class="paragraph">See also <a href="../build-type-settings/features.html">features()</a>.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1396595378%2FConstructors%2F1411724783" anchor-label="BuildFeatures" id="1396595378%2FConstructors%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="build-features.html"><span>Build</span><wbr></wbr><span><span>Features</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1396595378%2FConstructors%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-977723198%2FFunctions%2F1411724783" anchor-label="approval" id="-977723198%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/approval/index.html"><span><span>approval</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-977723198%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/approval/index.html"><span class="token function">approval</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/approval/index.html">Approval</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/approval/index.html">Approval</a></div><div class="brief "><p class="paragraph">Make build require manual approval before it will be assigned to an agent</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1446610858%2FFunctions%2F1411724783" anchor-label="assemblyInfoPatcher" id="-1446610858%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/assembly-info-patcher/index.html"><span>assembly</span><wbr></wbr><span>Info</span><wbr></wbr><span><span>Patcher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1446610858%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/assembly-info-patcher/index.html"><span class="token function">assemblyInfoPatcher</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/assembly-info-patcher/index.html">AssemblyInfoPatcher</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/assembly-info-patcher/index.html">AssemblyInfoPatcher</a></div><div class="brief "><p class="paragraph">Adds a <a href="https://www.jetbrains.com/help/teamcity/?AssemblyInfo+Patcher">build feature</a> which updates the <a href="https://learn.microsoft.com/en-us/dotnet/api/system.reflection.assemblyversionattribute">AssemblyVersion</a>, <a href="https://learn.microsoft.com/en-us/dotnet/api/system.reflection.assemblyfileversionattribute">AssemblyFileVersion</a> and <a href="https://learn.microsoft.com/en-us/dotnet/api/system.reflection.assemblyinformationalversionattribute">AssemblyInformationalVersion</a> attributes in <a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.visualbasic.applicationservices.assemblyinfo?view=windowsdesktop-7.0">AssemblyInfo</a> files under Properties folders. No additional attributes will be added, make sure you have all necessary attributes in the source code. Changed source files are reverted at the end of a build.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="383095364%2FFunctions%2F1411724783" anchor-label="buildCache" id="383095364%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/build-cache-feature/index.html"><span>build</span><wbr></wbr><span><span>Cache</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="383095364%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/build-cache-feature/index.html"><span class="token function">buildCache</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/build-cache-feature/index.html">BuildCacheFeature</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/build-cache-feature/index.html">BuildCacheFeature</a></div><div class="brief "><p class="paragraph">Adds a build cache to the build</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1514502806%2FFunctions%2F1411724783" anchor-label="commitStatusPublisher" id="1514502806%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/commit-status-publisher/index.html"><span>commit</span><wbr></wbr><span>Status</span><wbr></wbr><span><span>Publisher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1514502806%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/commit-status-publisher/index.html"><span class="token function">commitStatusPublisher</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/commit-status-publisher/index.html">CommitStatusPublisher</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/commit-status-publisher/index.html">CommitStatusPublisher</a></div><div class="brief "><p class="paragraph">Enables <a href="https://www.jetbrains.com/help/teamcity/?Commit+Status+Publisher">status publishing</a> to external system</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1005006875%2FFunctions%2F1411724783" anchor-label="copy" id="-1005006875%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../copy.html"><span><span>copy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1005006875%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../copy.html"><span class="token function">copy</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">BuildFeatures</a></div><div class="brief "><p class="paragraph">Copies the receiver build features</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1790364934%2FFunctions%2F1411724783" anchor-label="copyTo" id="-1790364934%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../copy-to.html"><span>copy</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1790364934%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../copy-to.html"><span class="token function">copyTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">target<span class="token operator">: </span><a href="index.html">BuildFeatures</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">BuildFeatures</a></div><div class="brief "><p class="paragraph">Copies the receiver build features to the specified target</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1081286446%2FFunctions%2F1411724783" anchor-label="dockerSupport" id="-1081286446%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/docker-support-feature/index.html"><span>docker</span><wbr></wbr><span><span>Support</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1081286446%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/docker-support-feature/index.html"><span class="token function">dockerSupport</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/docker-support-feature/index.html">DockerSupportFeature</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/docker-support-feature/index.html">DockerSupportFeature</a></div><div class="brief "><p class="paragraph"><strong>Example.</strong></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1483772195%2FFunctions%2F1411724783" anchor-label="feature" id="1483772195%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="feature.html"><span><span>feature</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1483772195%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="feature.html"><span class="token function">feature</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">feature<span class="token operator">: </span><a href="../build-feature/index.html">BuildFeature</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Adds the specified build feature</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="feature.html"><span class="token function">feature</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../build-feature/index.html">BuildFeature</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../build-feature/index.html">BuildFeature</a></div><div class="brief "><p class="paragraph">Adds a build feature initialized with the specified init block</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-562608426%2FFunctions%2F1411724783" anchor-label="freeDiskSpace" id="-562608426%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/free-disk-space/index.html"><span>free</span><wbr></wbr><span>Disk</span><wbr></wbr><span><span>Space</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-562608426%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/free-disk-space/index.html"><span class="token function">freeDiskSpace</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/free-disk-space/index.html">FreeDiskSpace</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/free-disk-space/index.html">FreeDiskSpace</a></div><div class="brief "><p class="paragraph">Adds a <a href="https://www.jetbrains.com/help/teamcity/?Free+Disk+Space">free disk space</a> check to the build configuration or template</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="901265792%2FFunctions%2F1411724783" anchor-label="golang" id="901265792%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/golang-feature/index.html"><span><span>golang</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="901265792%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/golang-feature/index.html"><span class="token function">golang</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/golang-feature/index.html">GolangFeature</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/golang-feature/index.html">GolangFeature</a></div><div class="brief "><p class="paragraph"><strong>Example.</strong> Adds a <a href="https://www.jetbrains.com/help/teamcity/?Golang">Golang build feature</a> for test reporting. Note that additional <code class="lang-kotlin">-json</code> command line argument is specified for tests run.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="907251572%2FFunctions%2F1411724783" anchor-label="investigationsAutoAssigner" id="907251572%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/investigations-auto-assigner/index.html"><span>investigations</span><wbr></wbr><span>Auto</span><wbr></wbr><span><span>Assigner</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="907251572%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/investigations-auto-assigner/index.html"><span class="token function">investigationsAutoAssigner</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/investigations-auto-assigner/index.html">InvestigationsAutoAssigner</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/investigations-auto-assigner/index.html">InvestigationsAutoAssigner</a></div><div class="brief "><p class="paragraph">Configures Investigations Auto Assigner behaviour.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="635032214%2FFunctions%2F1411724783" anchor-label="jiraCloudIntegration" id="635032214%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/jira-cloud-integration/index.html"><span>jira</span><wbr></wbr><span>Cloud</span><wbr></wbr><span><span>Integration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="635032214%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/jira-cloud-integration/index.html"><span class="token function">jiraCloudIntegration</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/jira-cloud-integration/index.html">JiraCloudIntegration</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/jira-cloud-integration/index.html">JiraCloudIntegration</a></div><div class="brief "><p class="paragraph">Provides integration with Jira Cloud via its Build and Deployment APIs</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-174255350%2FFunctions%2F1411724783" anchor-label="matrix" id="-174255350%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../matrix-feature/index.html"><span><span>matrix</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-174255350%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../matrix-feature/index.html"><span class="token function">matrix</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../matrix-feature/index.html">MatrixFeature</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">The Matrix Builds feature allows you to define a build configuration with different sets of parameters/parameter values. Running this build configuration creates a batch of separate builds, each running its own parameter set.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1208694087%2FFunctions%2F1411724783" anchor-label="merge" id="1208694087%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/auto-merge/index.html"><span><span>merge</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1208694087%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/auto-merge/index.html"><span class="token function">merge</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/auto-merge/index.html">AutoMerge</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/auto-merge/index.html">AutoMerge</a></div><div class="brief "><p class="paragraph">Enables <a href="https://www.jetbrains.com/help/teamcity/?Automatic+Merge">automatic merge</a> in the build configuration or template</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="191833526%2FFunctions%2F1411724783" anchor-label="notifications" id="191833526%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/notifications/index.html"><span><span>notifications</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="191833526%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/notifications/index.html"><span class="token function">notifications</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/notifications/index.html">Notifications</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/notifications/index.html">Notifications</a></div><div class="brief "><p class="paragraph">Add notification rule</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-461823777%2FFunctions%2F1411724783" anchor-label="npmRegistry" id="-461823777%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/npm-connection-build-feature/index.html"><span>npm</span><wbr></wbr><span><span>Registry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-461823777%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/npm-connection-build-feature/index.html"><span class="token function">npmRegistry</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/npm-connection-build-feature/index.html">NpmConnectionBuildFeature</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/npm-connection-build-feature/index.html">NpmConnectionBuildFeature</a></div><div class="brief "><p class="paragraph"><strong>Example.</strong> Adds an <a href="https://www.jetbrains.com/help/teamcity/?nodejs#Accessing+Private+NPM+Registries">npm registry</a> build feature. Please note that corresponding connection project feature should be provided in project. This connection will be used only inside <code class="lang-kotlin">nodeJS</code> build steps.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="972681754%2FFunctions%2F1411724783" anchor-label="nuGetFeedCredentials" id="972681754%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/nu-get-feed-credentials/index.html"><span>nu</span><wbr></wbr><span>Get</span><wbr></wbr><span>Feed</span><wbr></wbr><span><span>Credentials</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="972681754%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/nu-get-feed-credentials/index.html"><span class="token function">nuGetFeedCredentials</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/nu-get-feed-credentials/index.html">NuGetFeedCredentials</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/nu-get-feed-credentials/index.html">NuGetFeedCredentials</a></div><div class="brief "><p class="paragraph">Provides <a href="https://confluence.jetbrains.com/display/TCDL/NuGet+Feed+Credentials">NuGet feed credentials</a> for feed</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="26403266%2FFunctions%2F1411724783" anchor-label="nuGetPackagesIndexer" id="26403266%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/nu-get-packages-indexer/index.html"><span>nu</span><wbr></wbr><span>Get</span><wbr></wbr><span>Packages</span><wbr></wbr><span><span>Indexer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="26403266%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/nu-get-packages-indexer/index.html"><span class="token function">nuGetPackagesIndexer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/nu-get-packages-indexer/index.html">NuGetPackagesIndexer</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/nu-get-packages-indexer/index.html">NuGetPackagesIndexer</a></div><div class="brief "><p class="paragraph">Enables <a href="https://confluence.jetbrains.com/display/TCDL/NuGet">NuGet packages indexing</a> into feed</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="170663410%2FFunctions%2F1411724783" anchor-label="parallelTests" id="170663410%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/parallel-tests-feature/index.html"><span>parallel</span><wbr></wbr><span><span>Tests</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="170663410%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/parallel-tests-feature/index.html"><span class="token function">parallelTests</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/parallel-tests-feature/index.html">ParallelTestsFeature</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/parallel-tests-feature/index.html">ParallelTestsFeature</a></div><div class="brief "><p class="paragraph"><strong>Example.</strong> Enables tests parallelization. Uses 3 parallel batches to run tests.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1345799702%2FFunctions%2F1411724783" anchor-label="perfmon" id="1345799702%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/perfmon/index.html"><span><span>perfmon</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1345799702%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/perfmon/index.html"><span class="token function">perfmon</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/perfmon/index.html">Perfmon</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/perfmon/index.html">Perfmon</a></div><div class="brief "><p class="paragraph">Adds a <a href="https://www.jetbrains.com/help/teamcity/?Performance+Monitor">build feature</a> build feature</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1259491402%2FFunctions%2F1411724783" anchor-label="provideAwsCredentials" id="-1259491402%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/provide-aws-credentials/index.html"><span>provide</span><wbr></wbr><span>Aws</span><wbr></wbr><span><span>Credentials</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1259491402%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/provide-aws-credentials/index.html"><span class="token function">provideAwsCredentials</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/provide-aws-credentials/index.html">ProvideAwsCredentials</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/provide-aws-credentials/index.html">ProvideAwsCredentials</a></div><div class="brief "><p class="paragraph"><strong>Example.</strong> Provides AWS Credentials of chosen AWS Connection to the Build Agent</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1272890738%2FFunctions%2F1411724783" anchor-label="pullRequests" id="-1272890738%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/pull-requests/index.html"><span>pull</span><wbr></wbr><span><span>Requests</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1272890738%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/pull-requests/index.html"><span class="token function">pullRequests</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/pull-requests/index.html">PullRequests</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/pull-requests/index.html">PullRequests</a></div><div class="brief "><p class="paragraph">Enables <a href="https://www.jetbrains.com/help/teamcity/?Pull+Requests">pull requests integration</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1300163084%2FFunctions%2F1411724783" anchor-label="replaceContent" id="1300163084%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/file-content-replacer/index.html"><span>replace</span><wbr></wbr><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1300163084%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/file-content-replacer/index.html"><span class="token function">replaceContent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/file-content-replacer/index.html">FileContentReplacer</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/file-content-replacer/index.html">FileContentReplacer</a></div><div class="brief "><p class="paragraph">Adds a <a href="https://www.jetbrains.com/help/teamcity/?File+Content+Replacer">build feature</a> which processes text files by performing regular expressions</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1391422986%2FFunctions%2F1411724783" anchor-label="rubyEnvConfigurator" id="-1391422986%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/ruby-env-configurator/index.html"><span>ruby</span><wbr></wbr><span>Env</span><wbr></wbr><span><span>Configurator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1391422986%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/ruby-env-configurator/index.html"><span class="token function">rubyEnvConfigurator</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/ruby-env-configurator/index.html">RubyEnvConfigurator</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/ruby-env-configurator/index.html">RubyEnvConfigurator</a></div><div class="brief "><p class="paragraph">Adds a <a href="https://www.jetbrains.com/help/teamcity/?Ruby+Environment+Configurator">Ruby Environment Configurator</a> build feature passes Ruby interpreter to all build steps.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1296853948%2FFunctions%2F1411724783" anchor-label="sharedResources" id="1296853948%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../shared-resources/index.html"><span>shared</span><wbr></wbr><span><span>Resources</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1296853948%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../shared-resources/index.html"><span class="token function">sharedResources</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../shared-resources/index.html">SharedResources</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Adds a <a href="https://www.jetbrains.com/help/teamcity/?Shared+Resources#Using+Shared+Resources+in+Build+Configurations">Shared Resource build feature</a> which allows limiting concurrently running builds using a shared resource. Note that corrensponding <a href="https://www.jetbrains.com/help/teamcity/?Shared+Resources#Adding+and+Editing+Shared+Resources">Shared Resources project feature</a> should be defined.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="666525174%2FFunctions%2F1411724783" anchor-label="sshAgent" id="666525174%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/ssh-agent/index.html"><span>ssh</span><wbr></wbr><span><span>Agent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="666525174%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/ssh-agent/index.html"><span class="token function">sshAgent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/ssh-agent/index.html">SshAgent</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/ssh-agent/index.html">SshAgent</a></div><div class="brief "><p class="paragraph">Adds a <a href="https://www.jetbrains.com/help/teamcity/?SSH+Agent">build feature</a> which runs SSH agent during a build with the specified SSH key loaded</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1791866340%2FFunctions%2F1411724783" anchor-label="swabra" id="1791866340%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/swabra/index.html"><span><span>swabra</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1791866340%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/swabra/index.html"><span class="token function">swabra</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/swabra/index.html">Swabra</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/swabra/index.html">Swabra</a></div><div class="brief "><p class="paragraph">Adds a <a href="https://www.jetbrains.com/help/teamcity/?Build+Files+Cleaner+(Swabra)">build feature</a> cleaning files and processes created during a build</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1917034300%2FFunctions%2F1411724783" anchor-label="validate" id="-1917034300%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="validate.html"><span><span>validate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1917034300%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="validate.html"><span class="token function">validate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">consumer<span class="token operator">: </span><a href="../error-consumer/index.html">ErrorConsumer</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Validates this object and reports found errors to the provided consumer</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-281837706%2FFunctions%2F1411724783" anchor-label="vcsLabeling" id="-281837706%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/vcs-labeling/index.html"><span>vcs</span><wbr></wbr><span><span>Labeling</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-281837706%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/vcs-labeling/index.html"><span class="token function">vcsLabeling</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/vcs-labeling/index.html">VcsLabeling</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/vcs-labeling/index.html">VcsLabeling</a></div><div class="brief "><p class="paragraph">Enables <a href="https://www.jetbrains.com/help/teamcity/?VCS+Labeling#VCSLabeling-AutomaticVCSlabeling">automatic VCS labeling</a> in a build</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1700849814%2FFunctions%2F1411724783" anchor-label="xmlReport" id="1700849814%2FFunctions%2F1411724783" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../buildFeatures/xml-report/index.html"><span>xml</span><wbr></wbr><span><span>Report</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1700849814%2FFunctions%2F1411724783"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">BuildFeatures</a><span class="token punctuation">.</span><a href="../../buildFeatures/xml-report/index.html"><span class="token function">xmlReport</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">init<span class="token operator">: </span><span class="token keyword"></span><a href="../../buildFeatures/xml-report/index.html">XmlReport</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../buildFeatures/xml-report/index.html">XmlReport</a></div><div class="brief "><p class="paragraph">Adds a <a href="https://www.jetbrains.com/help/teamcity/xml-report-processing.html">build feature</a> parses xml report produced by external tools and present them as build results</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
