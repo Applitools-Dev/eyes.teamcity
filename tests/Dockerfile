@@ -1,7 +1,7 @@
 FROM jetbrains/teamcity-server:latest
 
 # Copy data directory
-COPY docker/datadir/* /data/teamcity_server/datadir/
+COPY docker/datadir /data/teamcity_server/datadir
 
 # Install plugins
 COPY docker/target/applitools-eyes.zip /data/teamcity_server/datadir/plugins/applitools-eyes.zip
