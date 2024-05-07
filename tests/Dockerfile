@@ -1,10 +1,13 @@
 FROM jetbrains/teamcity-server:latest
 
 # Copy project configuration files
-COPY projects/* /data/teamcity_server/datadir/config/projects/
+COPY docker/projects/* /data/teamcity_server/datadir/config/projects/
 
 # Install plugins
-COPY target/applitools-eyes.zip /data/teamcity_server/datadir/plugins/applitools-eyes.zip
+COPY docker/target/applitools-eyes.zip /data/teamcity_server/datadir/plugins/applitools-eyes.zip
+
+# Copy preconfigured database.properties file
+COPY docker/database.properties /data/teamcity_server/datadir/config/database.properties
 
 # Start TeamCity server
-RUN /opt/teamcity/bin/teamcity-server.sh start
+CMD ["/opt/teamcity/bin/teamcity-server.sh", "run"]

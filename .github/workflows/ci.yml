@@ -25,7 +25,7 @@ jobs:
 
     - name: Build Docker image
       run: | 
-        cp -r target tests
+        cp -r target tests/docker
         cd tests
         docker build -t teamcity_container .
         docker run -d -p 8111:8111 --name teamcity_container teamcity_container
