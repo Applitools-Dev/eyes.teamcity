@@ -23,16 +23,11 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
-    - name: Pull TeamCity Docker image
-      run: docker pull jetbrains/teamcity-server
-
-    - name: Run TeamCity Docker container
-      run: docker run -d -p 8111:8111 --name teamcity_container jetbrains/teamcity-server
-
-    - name: Copy plugin to Docker container
-      run: |
-        docker exec teamcity_container mkdir -p /data/teamcity_server/datadir/plugins/
-        docker cp target/applitools-eyes.zip teamcity_container:/data/teamcity_server/datadir/plugins/
+    - name: Build Docker image
+      run: | 
+        cd tests
+        docker build -t teamcity_container .
+        docker run -d -p 8111:8111 --name teamcity_container teamcity_container
       
     - name: Run tests
       run: |
