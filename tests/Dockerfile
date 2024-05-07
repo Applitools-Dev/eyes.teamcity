@@ -9,5 +9,8 @@ COPY docker/target/applitools-eyes.zip /data/teamcity_server/datadir/plugins/app
 # Copy preconfigured database.properties file
 COPY docker/database.properties /data/teamcity_server/datadir/config/database.properties
 
+# Copy prepopulated HSQLDB database files
+COPY docker/system/*.* /data/teamcity_server/datadir/system/
+
 # Start TeamCity server
 CMD ["/opt/teamcity/bin/teamcity-server.sh", "run"]
