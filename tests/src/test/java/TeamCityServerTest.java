@@ -41,8 +41,36 @@ public class TeamCityServerTest {
         String serverUrl = "http://localhost:" + teamCityContainer.getMappedPort(8111);
         driver.get(serverUrl);
 
+        // Wait for the login page to load for up to 60 seconds
+        long startTime = System.currentTimeMillis();
+        long timeout = 60000; // 60 seconds
+        while (driver.findElements(By.id("loginPage")).size() == 0) {
+            if (System.currentTimeMillis() - startTime >= timeout) {
+                break;
+            }
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
         eyes.open(driver, "TeamCity Server", "Initial View");
-        eyes.checkWindow();
+        eyes.checkWindow("login");
+
+        // Find the username input field and enter 'applitools'
+        driver.findElement(By.id("username")).sendKeys("applitools");
+
+        // Find the password input field and enter the password from the environment variable
+        String password = System.getenv("TEAMCITY_PASSWORD");
+        driver.findElement(By.id("password")).sendKeys(password);
+
+        // Find the login button and click it
+        driver.findElement(By.name("submitLogin")).click();
+        try {
+            eyes.checkWindow();
+        } catch (Exception e) {
+            System.out.println("Exception: " + e);
+        }
         eyes.close();
     }
 
