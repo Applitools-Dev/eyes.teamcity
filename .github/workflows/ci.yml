@@ -33,3 +33,16 @@ jobs:
         mvn test
       env:
         APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
+
+    - name: Print TeamCity logs
+      run: docker exec teamcity_server cat /opt/teamcity/logs/teamcity-server.log
+
+    - name: Save TeamCity logs
+      run: docker cp teamcity_server:/opt/teamcity/logs/teamcity-server.log .
+    - uses: actions/upload-artifact@v2
+      with:
+        name: teamcity-server-log
+        path: teamcity-server.log
+    
+    - name: Stop Docker container
+      run: docker stop teamcity_server
