@@ -27,7 +27,7 @@ jobs:
       run: | 
         env
         chmod -R 777 tests/docker
-        docker run -d -p 8111:8111 -v $HOME/work/eyes.teamcity/eyes.teamcity/tests/docker:/data/teamcity_server/datadir --name=teamcity_server jetbrains/teamcity-server:2024.03.1-linux
+        docker run -d -p 8111:8111 -v $RUNNER_WORKSPACE/eyes.teamcity/tests/docker:/data/teamcity_server/datadir --name=teamcity_server jetbrains/teamcity-server:2024.03.1-linux
     - name: Run tests
       run: |
         cd tests
