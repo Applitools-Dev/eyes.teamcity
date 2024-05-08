@@ -40,6 +40,7 @@ public class TeamCityServerTest {
     public void testTeamCityServer() {
         String serverUrl = "http://localhost:" + teamCityContainer.getMappedPort(8111);
         driver.get(serverUrl);
+        eyes.open(driver, "TeamCity Server", "Initial View");
 
         // Wait for the login page to load for up to 500 seconds
         long startTime = System.currentTimeMillis();
@@ -62,7 +63,6 @@ public class TeamCityServerTest {
                 e.printStackTrace();
             }
         }
-        eyes.open(driver, "TeamCity Server", "Initial View");
         eyes.checkWindow("login");
 
         // Find the username input field and enter 'applitools'
