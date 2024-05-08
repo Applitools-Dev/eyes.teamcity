@@ -18,9 +18,12 @@ public class TeamCityServerTest {
 
     @BeforeClass
     public void setUp() {
+        String currentDirectory = System.getProperty("user.dir");
+        System.out.println("Current working directory: " + currentDirectory);
         // Start TeamCity server in a Docker container
         teamCityContainer = new GenericContainer(DockerImageName.parse("jetbrains/teamcity-server"))
-            .withExposedPorts(8111);
+                .withExposedPorts(8111);
+        teamCityContainer.withFileSystemBind("", "/data/teamcity_server/datadir");
         teamCityContainer.start();
 
         // Set up WebDriver
