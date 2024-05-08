@@ -49,7 +49,9 @@ public class TeamCityServerTest {
             if (timeElapsed >= timeout) {
                 throw new RuntimeException("Timed out waiting for login page to load");
             }
-            System.out.println("Time elapsed: " + timeElapsed + "s ; Page title: '" + driver.getTitle() + "'");
+
+            String title = driver.getTitle();
+            System.out.println("Time elapsed: " + timeElapsed + "s ; Page title: '" + title + "'");
             try {
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
