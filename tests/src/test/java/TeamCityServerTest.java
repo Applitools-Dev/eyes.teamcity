@@ -43,11 +43,13 @@ public class TeamCityServerTest {
 
         // Wait for the login page to load for up to 500 seconds
         long startTime = System.currentTimeMillis();
-        long timeout = 500000; // 500 seconds
-        while (driver.findElements(By.id("loginPage")).size() == 0) {
-            if (System.currentTimeMillis() - startTime >= timeout) {
+        long timeout = 500; // 500 seconds
+        while (driver.findElements(By.id("loginPage")).isEmpty()) {
+            int timeElapsed = (int) (System.currentTimeMillis() - startTime) / 1000;
+            if (timeElapsed >= timeout) {
                 throw new RuntimeException("Timed out waiting for login page to load");
             }
+            System.out.println("Time elapsed: " + timeElapsed + "s ; Page title: '" + driver.getTitle() + "'");
             try {
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
