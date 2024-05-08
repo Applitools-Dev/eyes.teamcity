@@ -5,6 +5,7 @@ on:
 
 env:
   APPLITOOLS_API_KEY: ${{secrets.APPLITOOLS_API_KEY}}
+  TEAMCITY_PASSWORD: ${{secrets.TEAMCITY_PASSWORD}}
 
 jobs:
   build:
