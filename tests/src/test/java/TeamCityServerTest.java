@@ -70,10 +70,14 @@ public class TeamCityServerTest {
 
         // Find the login button and click it
         driver.findElement(By.name("submitLogin")).click();
-        try {
-            eyes.checkWindow();
-        } catch (Exception e) {
-            System.out.println("Exception: " + e);
+        eyes.checkWindow(driver.getTitle());
+        for (int i = 0; i<5; ++i){
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            eyes.checkWindow(driver.getTitle());
         }
         eyes.close();
     }
