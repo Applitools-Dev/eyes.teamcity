@@ -51,10 +51,6 @@ public class TeamCityServerTest {
                 throw new RuntimeException("Timed out waiting for login page to load");
             }
 
-            if (timeElapsed % 30 == 0) {
-                eyes.checkWindow("temp - " + timeElapsed + "s");
-            }
-
             String title = driver.getTitle();
             System.out.println("Time elapsed: " + timeElapsed + "s ; Page title: '" + title + "'");
             try {
