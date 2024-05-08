@@ -41,12 +41,12 @@ public class TeamCityServerTest {
         String serverUrl = "http://localhost:" + teamCityContainer.getMappedPort(8111);
         driver.get(serverUrl);
 
-        // Wait for the login page to load for up to 60 seconds
+        // Wait for the login page to load for up to 120 seconds
         long startTime = System.currentTimeMillis();
-        long timeout = 60000; // 60 seconds
+        long timeout = 120000; // 120 seconds
         while (driver.findElements(By.id("loginPage")).size() == 0) {
             if (System.currentTimeMillis() - startTime >= timeout) {
-                break;
+                throw new RuntimeException("Timed out waiting for login page to load");
             }
             try {
                 Thread.sleep(1000);
