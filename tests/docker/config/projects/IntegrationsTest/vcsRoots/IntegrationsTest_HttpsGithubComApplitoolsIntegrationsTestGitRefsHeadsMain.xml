@@ -6,12 +6,12 @@
   <param name="authMethod" value="PASSWORD" />
   <param name="branch" value="refs/heads/main" />
   <param name="ignoreKnownHosts" value="true" />
-  <param name="secure:password" value="zxx2a69b42ee77d67c583e46449e2b8cab9918a63fbecb3fe231bc8fdffafe66386a8ef3af75d2a662f775d03cbe80d301b" />
+  <param name="secure:password" value="zxx5164a98d9a374079181e89ae00388ec662473cc40f779d200ce99bd1b37ca1f5f31ba0c2f13d33ef775d03cbe80d301b" />
   <param name="submoduleCheckout" value="CHECKOUT" />
   <param name="teamcity:branchSpec" value="refs/heads/*" />
   <param name="url" value="https://github.com/applitools/integrations-test.git" />
   <param name="useAlternates" value="AUTO" />
-  <param name="username" value="buildbot@applitools.com" />
+  <param name="username" value="ApplitoolsBuildBot" />
   <param name="usernameStyle" value="USERID" />
 </vcs-root>
 
