@@ -1,3 +1,4 @@
+import com.applitools.eyes.RectangleSize;
 import com.applitools.eyes.selenium.Eyes;
 import com.applitools.eyes.selenium.StitchMode;
 import org.openqa.selenium.By;
@@ -40,11 +41,11 @@ public class TeamCityServerTest {
     public void testTeamCityServer() {
         String serverUrl = "http://localhost:" + teamCityContainer.getMappedPort(8111);
         driver.get(serverUrl);
-        eyes.open(driver, "TeamCity Server", "TeamCity Eyes Plugin");
+        eyes.open(driver, "TeamCity Server", "TeamCity Eyes Plugin", new RectangleSize(1200,800));
 
         // Wait for the login page to load for up to 500 seconds
+        long timeout = 120; // 120 seconds
         long startTime = System.currentTimeMillis();
-        long timeout = 500; // 500 seconds
         while (driver.findElements(By.id("loginPage")).isEmpty()) {
             int timeElapsed = (int) (System.currentTimeMillis() - startTime) / 1000;
             if (timeElapsed >= timeout) {
@@ -70,15 +71,19 @@ public class TeamCityServerTest {
 
         // Find the login button and click it
         driver.findElement(By.name("submitLogin")).click();
-        eyes.checkWindow(driver.getTitle());
-        for (int i = 0; i<5; ++i){
+        startTime = System.currentTimeMillis();
+        while (!("Favorite Projects — TeamCity".equals(driver.getTitle()))) {
+            int timeElapsed = (int) (System.currentTimeMillis() - startTime) / 1000;
+            if (timeElapsed >= timeout) {
+                throw new RuntimeException("Timed out waiting for favorite projects page to load");
+            }
             try {
-                Thread.sleep(1000);
+                Thread.sleep(250);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            eyes.checkWindow(driver.getTitle());
         }
+        eyes.checkWindow(driver.getTitle());
         eyes.close();
     }
 
