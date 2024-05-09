@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vcs-root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="5de8f5c4-6239-4e18-be89-d661409fa415" type="jetbrains.git" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2021.1/project-config.xsd">
+  <name>https://github.com/applitools/integrations-test.git#refs/heads/main</name>
+  <param name="agentCleanFilesPolicy" value="ALL_UNTRACKED" />
+  <param name="agentCleanPolicy" value="ON_BRANCH_CHANGE" />
+  <param name="authMethod" value="PASSWORD" />
+  <param name="branch" value="refs/heads/main" />
+  <param name="ignoreKnownHosts" value="true" />
+  <param name="secure:password" value="zxx5164a98d9a374079181e89ae00388ec662473cc40f779d200ce99bd1b37ca1f5f31ba0c2f13d33ef775d03cbe80d301b" />
+  <param name="submoduleCheckout" value="CHECKOUT" />
+  <param name="teamcity:branchSpec" value="refs/heads/*" />
+  <param name="url" value="https://github.com/applitools/integrations-test.git" />
+  <param name="useAlternates" value="AUTO" />
+  <param name="username" value="ApplitoolsBuildBot" />
+  <param name="usernameStyle" value="USERID" />
+</vcs-root>
+

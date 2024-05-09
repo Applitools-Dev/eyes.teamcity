@@ -1,0 +1,1156 @@
+{
+  "artifacts": [
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2024.1",
+      "build": "241.14494.240",
+      "packaging": "zip",
+      "eTag": "dc734020097ee9a4efb34cf93d7c1711-216",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2024.1/ideaIU-2024.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.3.6",
+      "build": "233.15026.9",
+      "packaging": "zip",
+      "eTag": "84190a846a8ded8da00fb7e53cb9452b-160",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.3.6/ideaIU-2023.3.6.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.3.5",
+      "build": "233.14808.21",
+      "packaging": "zip",
+      "eTag": "735d5f6481e171634d503ae7cdfd1361-160",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.3.5/ideaIU-2023.3.5.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.3.4",
+      "build": "233.14475.28",
+      "packaging": "zip",
+      "eTag": "cc627a816e75cdd0fa8b6799532a2c4a-160",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.3.4/ideaIU-2023.3.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.3.3",
+      "build": "233.14015.106",
+      "packaging": "zip",
+      "eTag": "e8beba0c6743e3d9e30edab24bd69642-160",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.3.3/ideaIU-2023.3.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.3.2",
+      "build": "233.13135.103",
+      "packaging": "zip",
+      "eTag": "30573bdc1527e5782b1d8578c6826b68-157",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.3.2/ideaIU-2023.3.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.3.1",
+      "build": "233.11799.300",
+      "packaging": "zip",
+      "eTag": "95722ca91527b418763f7a1050283727-157",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.3.1/ideaIU-2023.3.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.3",
+      "build": "233.11799.241",
+      "packaging": "zip",
+      "eTag": "4652ac1d747fc6c32ea9a42d30b393cf-157",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.3/ideaIU-2023.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.2.6",
+      "build": "232.10300.40",
+      "packaging": "zip",
+      "eTag": "da038be059ca7fa8de171822c30df4fb-185",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.2.6/ideaIU-2023.2.6.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.2.5",
+      "build": "232.10227.8",
+      "packaging": "zip",
+      "eTag": "840dd4a1fcf817d2693b2d8449546f53-185",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.2.5/ideaIU-2023.2.5.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.2.4",
+      "build": "232.10203.10",
+      "packaging": "zip",
+      "eTag": "bec97cb5d0eecc7ec1153ca4818b4381-185",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.2.4/ideaIU-2023.2.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.2.3",
+      "build": "232.10072.27",
+      "packaging": "zip",
+      "eTag": "0d187eec4cc6b8084aed5a137fa7550c-185",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.2.3/ideaIU-2023.2.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.2.2",
+      "build": "232.9921.47",
+      "packaging": "zip",
+      "eTag": "2d882a1895f40a1836736856b959e466-185",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.2.2/ideaIU-2023.2.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.2.1",
+      "build": "232.9559.62",
+      "packaging": "zip",
+      "eTag": "ab5cb77805501e811fa5c0072c51f3ac-185",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.2.1/ideaIU-2023.2.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.2",
+      "build": "232.8660.185",
+      "packaging": "zip",
+      "eTag": "bb182207b0a4940a7c0b1a9a91c19ace-184",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.2/ideaIU-2023.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.1.6",
+      "build": "231.9414.13",
+      "packaging": "zip",
+      "eTag": "2f1704a22496118b3d4bb73a4b92d86b-181",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.1.6/ideaIU-2023.1.6.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.1.5",
+      "build": "231.9392.1",
+      "packaging": "zip",
+      "eTag": "04786cec971492bf8fd2ae4d324eb72d-181",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.1.5/ideaIU-2023.1.5.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.1.4",
+      "build": "231.9225.16",
+      "packaging": "zip",
+      "eTag": "3fc7ed9f95fd9bf9b37d997dfb5395b8-181",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.1.4/ideaIU-2023.1.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.1.3",
+      "build": "231.9161.38",
+      "packaging": "zip",
+      "eTag": "7ebcfe62170dc1f55eec8468cd82afcb-181",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.1.3/ideaIU-2023.1.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.1.2",
+      "build": "231.9011.34",
+      "packaging": "zip",
+      "eTag": "ffc672c664a8e5dbcbd4dae3d460be71-181",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.1.2/ideaIU-2023.1.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.1.1",
+      "build": "231.8770.65",
+      "packaging": "zip",
+      "eTag": "5cc090dbfce991bec41184f68e0bdee0-181",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.1.1/ideaIU-2023.1.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2023.1",
+      "build": "231.8109.175",
+      "packaging": "zip",
+      "eTag": "4384f887e6f9c11b61bb657b9c152405-180",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2023.1/ideaIU-2023.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2022.3.3",
+      "build": "223.8836.41",
+      "packaging": "zip",
+      "eTag": "5a9f5c3f607f1c741de08d9fbe5daf82-180",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2022.3.3/ideaIU-2022.3.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2022.3.2",
+      "build": "223.8617.56",
+      "packaging": "zip",
+      "eTag": "e19185306d8720c1d62b6d06b0819e0c-180",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2022.3.2/ideaIU-2022.3.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2022.3.1",
+      "build": "223.8214.52",
+      "packaging": "zip",
+      "eTag": "df845887cc717059614dab61ff283806-180",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2022.3.1/ideaIU-2022.3.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2022.3",
+      "build": "223.7571.182",
+      "packaging": "zip",
+      "eTag": "1193cf4aecb98567fb62e51f255d7c09-181",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2022.3/ideaIU-2022.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2022.2.5",
+      "build": "222.4554.10",
+      "packaging": "zip",
+      "eTag": "32d74bdc7348705774124cba11b534f8-164",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2022.2.5/ideaIU-2022.2.5.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2022.2.4",
+      "build": "222.4459.24",
+      "packaging": "zip",
+      "eTag": "6fe26abf78f61ae3bac6e4eba84ab891-164",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2022.2.4/ideaIU-2022.2.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2022.2.3",
+      "build": "222.4345.14",
+      "packaging": "zip",
+      "eTag": "a7b82e838a56546c76f7b218f922350d-164",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2022.2.3/ideaIU-2022.2.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2022.2.2",
+      "build": "222.4167.29",
+      "packaging": "zip",
+      "eTag": "665c91d1b9c8873693d6d738fd717fd0-164",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2022.2.2/ideaIU-2022.2.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2022.2.1",
+      "build": "222.3739.54",
+      "packaging": "zip",
+      "eTag": "9cc0611dfb7adcca85a2a2ccb870bb9e-164",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2022.2.1/ideaIU-2022.2.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2022.2",
+      "build": "222.3345.118",
+      "packaging": "zip",
+      "eTag": "4edd99d9514dea0b28e8c1a4b6be485a-163",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2022.2/ideaIU-2022.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2022.1.4",
+      "build": "221.6008.13",
+      "packaging": "zip",
+      "eTag": "6847f1306eae5e83e849f874376bd8b1-162",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2022.1.4/ideaIU-2022.1.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2022.1.3",
+      "build": "221.5921.22",
+      "packaging": "zip",
+      "eTag": "dbb650fd0cb1cf25e21a7372c15f0570-162",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2022.1.3/ideaIU-2022.1.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2022.1.2",
+      "build": "221.5787.30",
+      "packaging": "zip",
+      "eTag": "024bed971f603fc5dfa31ad5fac81dd4-162",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2022.1.2/ideaIU-2022.1.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2022.1.1",
+      "build": "221.5591.52",
+      "packaging": "zip",
+      "eTag": "7b631c6c2c73e9ce859f28d40be317a1-162",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2022.1.1/ideaIU-2022.1.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2022.1",
+      "build": "221.5080.210",
+      "packaging": "zip",
+      "eTag": "48757e6d999d904311fcfe8036b529d0-159",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2022.1/ideaIU-2022.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2021.3.4",
+      "build": "213.7172.53",
+      "packaging": "zip",
+      "eTag": "b8db6d29a255222fdc852a5c7a202ff9-155",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2021.3.4/ideaIU-2021.3.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2021.3.3",
+      "build": "213.7172.25",
+      "packaging": "zip",
+      "eTag": "bfb6aacbce730492ab7bddd93edf4f76-155",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2021.3.3/ideaIU-2021.3.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2021.3.2",
+      "build": "213.6777.52",
+      "packaging": "zip",
+      "eTag": "085ac32a24d788701946acac5d228303-155",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2021.3.2/ideaIU-2021.3.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2021.3.1",
+      "build": "213.6461.79",
+      "packaging": "zip",
+      "eTag": "1349ab9a2bc9067393790d0b33f39b1f-155",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2021.3.1/ideaIU-2021.3.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2021.3",
+      "build": "213.5744.223",
+      "packaging": "zip",
+      "eTag": "31bd38e7b4d4958820d283ef128baada-153",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2021.3/ideaIU-2021.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2021.2.4",
+      "build": "212.5712.43",
+      "packaging": "zip",
+      "eTag": "69d220c7ba4546c25bfc0d6bffd036dc-155",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2021.2.4/ideaIU-2021.2.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2021.2.3",
+      "build": "212.5457.46",
+      "packaging": "zip",
+      "eTag": "331f6ca3da9c4a1aca15ae0a9e979663-153",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2021.2.3/ideaIU-2021.2.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2021.2.2",
+      "build": "212.5284.40",
+      "packaging": "zip",
+      "eTag": "431bb8369148b62d10eb299173058e93-153",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2021.2.2/ideaIU-2021.2.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2021.2.1",
+      "build": "212.5080.55",
+      "packaging": "zip",
+      "eTag": "589544b5cda6980660be9d6c3bbeb032-153",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2021.2.1/ideaIU-2021.2.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2021.2",
+      "build": "212.4746.92",
+      "packaging": "zip",
+      "eTag": "2d1163221a146fdc35cfd8298c1276e0-153",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2021.2/ideaIU-2021.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2021.1.3",
+      "build": "211.7628.21",
+      "packaging": "zip",
+      "eTag": "464e2e8c83a531db0c8c6d0e9d5e7281-150",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2021.1.3/ideaIU-2021.1.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2021.1.2",
+      "build": "211.7442.40",
+      "packaging": "zip",
+      "eTag": "e1d60a5e4e3ddb26f8569a39bfdc64cf-150",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2021.1.2/ideaIU-2021.1.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2021.1.1",
+      "build": "211.7142.45",
+      "packaging": "zip",
+      "eTag": "98b6c241027bd6d451ee159aa08615ad-151",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2021.1.1/ideaIU-2021.1.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2021.1",
+      "build": "211.6693.111",
+      "packaging": "zip",
+      "eTag": "3e7e030440f972bb25df556a71a5a1ee-150",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2021.1/ideaIU-2021.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2020.3.4",
+      "build": "203.8084.24",
+      "packaging": "zip",
+      "eTag": "1bd402dd1d6c2e15a36d33a2704f0b7c-139",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2020.3.4/ideaIU-2020.3.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2020.3.3",
+      "build": "203.7717.56",
+      "packaging": "zip",
+      "eTag": "7ea876d48db890ce2a665988c0916788-139",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2020.3.3/ideaIU-2020.3.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2020.3.2",
+      "build": "203.7148.57",
+      "packaging": "zip",
+      "eTag": "95b852d6d93f001c95bf1bde862bebc3-139",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2020.3.2/ideaIU-2020.3.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2020.3.1",
+      "build": "203.6682.168",
+      "packaging": "zip",
+      "eTag": "44098481819df3a869404692c629c8be-139",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2020.3.1/ideaIU-2020.3.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2020.3",
+      "build": "203.5981.155",
+      "packaging": "zip",
+      "eTag": "f3d178239966439123548ed9f1e42bc0-140",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2020.3/ideaIU-2020.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2020.2.4",
+      "build": "202.8194.7",
+      "packaging": "zip",
+      "eTag": "ff1595100ad3b961b3bc676fff57e3c2-127",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2020.2.4/ideaIU-2020.2.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2020.2.3",
+      "build": "202.7660.26",
+      "packaging": "zip",
+      "eTag": "93fbb9c7f3b3216eb90eb7eff6c4db3a-127",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2020.2.3/ideaIU-2020.2.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2020.2.2",
+      "build": "202.7319.50",
+      "packaging": "zip",
+      "eTag": "4a772c4ba72f506267cc7ab9ab061b95-127",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2020.2.2/ideaIU-2020.2.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2020.2.1",
+      "build": "202.6948.69",
+      "packaging": "zip",
+      "eTag": "0b0a5ae148e774ef5c17400d19789718-127",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2020.2.1/ideaIU-2020.2.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2020.2",
+      "build": "202.6397.94",
+      "packaging": "zip",
+      "eTag": "935165d43e0f09f603474df28e5589b3-127",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2020.2/ideaIU-2020.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2020.1.4",
+      "build": "201.8743.12",
+      "packaging": "zip",
+      "eTag": "72106a5e195caf2463458f2536d54a33-129",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2020.1.4/ideaIU-2020.1.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2020.1.3",
+      "build": "201.8538.31",
+      "packaging": "zip",
+      "eTag": "4184f3de568a316ab9eb25a4c2eb6380-129",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2020.1.3/ideaIU-2020.1.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2020.1.2",
+      "build": "201.7846.76",
+      "packaging": "zip",
+      "eTag": "2990724a1f54a4b02bb82b9518498657-129",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2020.1.2/ideaIU-2020.1.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2020.1.1",
+      "build": "201.7223.91",
+      "packaging": "zip",
+      "eTag": "ad10a1109654b8b6f696637c39d4f507-129",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2020.1.1/ideaIU-2020.1.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2020.1",
+      "build": "201.6668.121",
+      "packaging": "zip",
+      "eTag": "265e9773ef4d7f69886dcbe461c77d86-128",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2020.1/ideaIU-2020.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2019.3.5",
+      "build": "193.7288.26",
+      "packaging": "zip",
+      "eTag": "9a3eeb135ea638048b0c10e409424358-135",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2019.3.5/ideaIU-2019.3.5.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2019.3.4",
+      "build": "193.6911.18",
+      "packaging": "zip",
+      "eTag": "e068f34f519d68205a7b94f9d7e49f2d-135",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2019.3.4/ideaIU-2019.3.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2019.3.3",
+      "build": "193.6494.35",
+      "packaging": "zip",
+      "eTag": "7a926666c0fe60c06d7107bacfda5013-135",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2019.3.3/ideaIU-2019.3.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2019.3.2",
+      "build": "193.6015.39",
+      "packaging": "zip",
+      "eTag": "4177bd8d53ea0d3857a8f3ce8526983f-135",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2019.3.2/ideaIU-2019.3.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2019.3.1",
+      "build": "193.5662.53",
+      "packaging": "zip",
+      "eTag": "eb281ad08826765df940ce97cdbf7ef3-135",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2019.3.1/ideaIU-2019.3.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2019.3",
+      "build": "193.5233.102",
+      "packaging": "zip",
+      "eTag": "1c6ea6e1bb07b6e74e7e1ba6c60f5172-132",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2019.3/ideaIU-2019.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2019.2.4",
+      "build": "192.7142.36",
+      "packaging": "zip",
+      "eTag": "c5cbeeeea41e3447ecefece1ea3995a3-136",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2019.2.4/ideaIU-2019.2.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2019.2.3",
+      "build": "192.6817.14",
+      "packaging": "zip",
+      "eTag": "b8690630c653cde67b6a20688bdc8221-136",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2019.2.3/ideaIU-2019.2.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2019.2.2",
+      "build": "192.6603.28",
+      "packaging": "zip",
+      "eTag": "55f804c07b4e5054142d6c44e4773bc6-136",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2019.2.2/ideaIU-2019.2.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2019.2.1",
+      "build": "192.6262.58",
+      "packaging": "zip",
+      "eTag": "9de221bd33b7ce74a726b4814229bd29-141",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2019.2.1/ideaIU-2019.2.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU",
+      "version": "2019.2",
+      "build": "192.5728.98",
+      "packaging": "zip",
+      "eTag": "9487b1f80c8ba31ee293189864bc3256-129",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU/2019.2/ideaIU-2019.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2019.1.4",
+      "build": "191.8026.42",
+      "packaging": "zip",
+      "eTag": "286a2470fa92c7892ada01d8a6e93826-82",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2019.1.4/ideaIU-teamcity-2019.1.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2019.1.3",
+      "build": "191.7479.19",
+      "packaging": "zip",
+      "eTag": "53239add096290ff5b2879d935530636-82",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2019.1.3/ideaIU-teamcity-2019.1.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2019.1.2",
+      "build": "191.7141.44",
+      "packaging": "zip",
+      "eTag": "4dead5ff476a8d22aa1434b856f92c00-82",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2019.1.2/ideaIU-teamcity-2019.1.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2019.1.1",
+      "build": "191.6707.61",
+      "packaging": "zip",
+      "eTag": "92dfef9416ad4f63e4eaea2f889afb8c-82",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2019.1.1/ideaIU-teamcity-2019.1.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2019.1",
+      "build": "191.6183.87",
+      "packaging": "zip",
+      "eTag": "841259205a4d3fad713b26a9517cee9f-82",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2019.1/ideaIU-teamcity-2019.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.3.6",
+      "build": "183.6156.11",
+      "packaging": "zip",
+      "eTag": "9d3bbc393f7bcfdd4f452af494fc1b19-73",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.3.6/ideaIU-teamcity-2018.3.6.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.3.5",
+      "build": "183.5912.21",
+      "packaging": "zip",
+      "eTag": "8f5d967d9fe7a619ae5ad476395f31de-73",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.3.5/ideaIU-teamcity-2018.3.5.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.3.4",
+      "build": "183.5429.30",
+      "packaging": "zip",
+      "eTag": "4552d02294077e90ae1cecb40b16f260-73",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.3.4/ideaIU-teamcity-2018.3.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.3.3",
+      "build": "183.5153.38",
+      "packaging": "zip",
+      "eTag": "e926f867b8f7221fcbcdb56b29ca02e6-73",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.3.3/ideaIU-teamcity-2018.3.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.3.2",
+      "build": "183.4886.37",
+      "packaging": "zip",
+      "eTag": "236a7a0fc69f3217536ee32285265067-73",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.3.2/ideaIU-teamcity-2018.3.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.3.1",
+      "build": "183.4588.61",
+      "packaging": "zip",
+      "eTag": "c59ba9476ceb23471430ca051ed76509-73",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.3.1/ideaIU-teamcity-2018.3.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.3",
+      "build": "183.4284.148",
+      "packaging": "zip",
+      "eTag": "86560eeda9c41a18e8c2b481d324dbae-73",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.3/ideaIU-teamcity-2018.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.2.8",
+      "build": "182.5262.2",
+      "packaging": "zip",
+      "eTag": "4b1c5728fc7b605a96f94ddc760d4e85-69",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.2.8/ideaIU-teamcity-2018.2.8.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.2.7",
+      "build": "182.5107.41",
+      "packaging": "zip",
+      "eTag": "1599d4e9767dfaf2a6b1704c3ca09593-69",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.2.7/ideaIU-teamcity-2018.2.7.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.2.6",
+      "build": "182.5107.16",
+      "packaging": "zip",
+      "eTag": "b5ff9cd61f7dc242a83ab1de4b049fc3-69",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.2.6/ideaIU-teamcity-2018.2.6.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.2.5",
+      "build": "182.4892.20",
+      "packaging": "zip",
+      "eTag": "a6f40ff56534cffdfe14f4cf776a79a0-69",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.2.5/ideaIU-teamcity-2018.2.5.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.2.4",
+      "build": "182.4505.22",
+      "packaging": "zip",
+      "eTag": "01c8c998fd1a14b946a60d7d14b9182c-69",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.2.4/ideaIU-teamcity-2018.2.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.2.3",
+      "build": "182.4323.46",
+      "packaging": "zip",
+      "eTag": "3b03482fde498e2965da35be28e0eb2d-69",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.2.3/ideaIU-teamcity-2018.2.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.2.2",
+      "build": "182.4129.33",
+      "packaging": "zip",
+      "eTag": "cb06afc44d89077be44bae040369bd2c-69",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.2.2/ideaIU-teamcity-2018.2.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.2.1",
+      "build": "182.3911.36",
+      "packaging": "zip",
+      "eTag": "166dfd23d192a19e953b31a912a7762f-69",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.2.1/ideaIU-teamcity-2018.2.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.2",
+      "build": "182.3684.101",
+      "packaging": "zip",
+      "eTag": "a7e6127c48f9b74751abc33d693cc50d-69",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.2/ideaIU-teamcity-2018.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.1.8",
+      "build": "181.5684.4",
+      "packaging": "zip",
+      "eTag": "8ae8ac5ff5363032a3a77f30ce043c86-70",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.1.8/ideaIU-teamcity-2018.1.8.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.1.7",
+      "build": "181.5540.23",
+      "packaging": "zip",
+      "eTag": "798720e3849cf4bbca0f5aa5656f576c-70",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.1.7/ideaIU-teamcity-2018.1.7.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.1.6",
+      "build": "181.5540.7",
+      "packaging": "zip",
+      "eTag": "d7afae2b5cc2931200e6eb35416e630e-70",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.1.6/ideaIU-teamcity-2018.1.6.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.1.5",
+      "build": "181.5281.24",
+      "packaging": "zip",
+      "eTag": "132dec11f14b95995d053a5b5266bd4d-71",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.1.5/ideaIU-teamcity-2018.1.5.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.1.4",
+      "build": "181.5087.20",
+      "packaging": "zip",
+      "eTag": "206d8f1e19f9d14018d553a32d12be60-70",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.1.4/ideaIU-teamcity-2018.1.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.1.3",
+      "build": "181.4892.42",
+      "packaging": "zip",
+      "eTag": "bc3051cc34f2a64a958c3edaf5e1c20a-70",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.1.3/ideaIU-teamcity-2018.1.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.1.2",
+      "build": "181.4668.68",
+      "packaging": "zip",
+      "eTag": "7113c28ebe8b1394e54b94a0c7768372-70",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.1.2/ideaIU-teamcity-2018.1.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.1.1",
+      "build": "181.4445.78",
+      "packaging": "zip",
+      "eTag": "45a63b87d67d5b9f2807c7151aff500e-70",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.1.1/ideaIU-teamcity-2018.1.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2018.1",
+      "build": "181.4203.550",
+      "packaging": "zip",
+      "eTag": "172be5d73793b5073f8e95e1c8992f1b-70",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2018.1/ideaIU-teamcity-2018.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.3.7",
+      "build": "173.4710.11",
+      "packaging": "zip",
+      "eTag": "fb4f3edbcd7063ea232bf89fa6624640-58",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.3.7/ideaIU-teamcity-2017.3.7.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.3.6",
+      "build": "173.4674.60",
+      "packaging": "zip",
+      "eTag": "04ae7d617b96ccd3461ce0953cbc187e-58",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.3.6/ideaIU-teamcity-2017.3.6.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.3.5",
+      "build": "173.4674.33",
+      "packaging": "zip",
+      "eTag": "7694419aa1cf0dc63b8c49bc8d896ae4-58",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.3.5/ideaIU-teamcity-2017.3.5.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.3.4",
+      "build": "173.4548.28",
+      "packaging": "zip",
+      "eTag": "28dfd89151a192ccdfe4f743f06aef0c-58",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.3.4/ideaIU-teamcity-2017.3.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.3.3",
+      "build": "173.4301.25",
+      "packaging": "zip",
+      "eTag": "8c2b1ad199c553d59484090f3d345225-58",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.3.3/ideaIU-teamcity-2017.3.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.3.2",
+      "build": "173.4127.27",
+      "packaging": "zip",
+      "eTag": "d9ab56a9bd65e8cfc8dd48be4b66582d-58",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.3.2/ideaIU-teamcity-2017.3.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.3.1",
+      "build": "173.3942.27",
+      "packaging": "zip",
+      "eTag": "0ee4ae5cd02dc55eb9747c148034fac8-58",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.3.1/ideaIU-teamcity-2017.3.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.3",
+      "build": "173.3727.127",
+      "packaging": "zip",
+      "eTag": "fc4bc71999c1d30da06840399d2fa6aa-58",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.3/ideaIU-teamcity-2017.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.2.7",
+      "build": "172.4574.19",
+      "packaging": "zip",
+      "eTag": "ff4521bfb5813345b49995c78758a647-55",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.2.7/ideaIU-teamcity-2017.2.7.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.2.6",
+      "build": "172.4574.11",
+      "packaging": "zip",
+      "eTag": "151b7b07b9ea8ee008677f6916c4a6ab-55",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.2.6/ideaIU-teamcity-2017.2.6.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.2.5",
+      "build": "172.4343.14",
+      "packaging": "zip",
+      "eTag": "9a73ecf6e75ec922bab79ce2ef97dff1-55",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.2.5/ideaIU-teamcity-2017.2.5.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.2.4",
+      "build": "172.4155.36",
+      "packaging": "zip",
+      "eTag": "c37f59bf6e3c9f57a2b3297db1436c55-55",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.2.4/ideaIU-teamcity-2017.2.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.2.3",
+      "build": "172.3968.16",
+      "packaging": "zip",
+      "eTag": "c153488d3cb3a69d8c600fab9c52445c-55",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.2.3/ideaIU-teamcity-2017.2.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.2.2",
+      "build": "172.3757.52",
+      "packaging": "zip",
+      "eTag": "b6a7cfe9202282ac6d9a619d19b77adb-55",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.2.2/ideaIU-teamcity-2017.2.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.2.1",
+      "build": "172.3544.35",
+      "packaging": "zip",
+      "eTag": "e94d299e813d1be2acea7d2a7f65b23f-54",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.2.1/ideaIU-teamcity-2017.2.1.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.2",
+      "build": "172.3317.76",
+      "packaging": "zip",
+      "eTag": "c5308ab20ad016356062460b8bb91e50-54",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.2/ideaIU-teamcity-2017.2.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.1.6",
+      "build": "171.4694.73",
+      "packaging": "zip",
+      "eTag": "8dbeffdf055fe0d525c1cc78ddbb3e95-52",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.1.6/ideaIU-teamcity-2017.1.6.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.1.5",
+      "build": "171.4694.70",
+      "packaging": "zip",
+      "eTag": "07a75ebdd23515e7fc533b092c67db69-52",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.1.5/ideaIU-teamcity-2017.1.5.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.1.4",
+      "build": "171.4694.23",
+      "packaging": "zip",
+      "eTag": "a4539fa56dcdccefa3ce378b04cdd58a-52",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.1.4/ideaIU-teamcity-2017.1.4.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.1.3",
+      "build": "171.4424.56",
+      "packaging": "zip",
+      "eTag": "e7e26c2d01e1ef71d7fe43d8b9bf6744-52",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.1.3/ideaIU-teamcity-2017.1.3.zip"
+    },
+    {
+      "groupId": "com.jetbrains.intellij.idea",
+      "artifactId": "ideaIU-teamcity",
+      "version": "2017.1.2",
+      "build": "171.4249.39",
+      "packaging": "zip",
+      "eTag": "3828202f8f05802b90ec67c153eb09ec-52",
+      "url": "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/ideaIU-teamcity/2017.1.2/ideaIU-teamcity-2017.1.2.zip"
+    }
+  ]
+}

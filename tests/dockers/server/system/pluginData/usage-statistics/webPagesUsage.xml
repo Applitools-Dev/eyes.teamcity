@@ -1,0 +1,89 @@
+<root>
+  <page path="/admin/createObjectMenu.html">
+    <usage userId="1" timestamp="1715091854412" />
+  </page>
+  <page path="/admin/vcsRootHealthStatusItems.html">
+    <usage userId="1" timestamp="1715236614957" />
+  </page>
+  <page path="/systemProblems.html">
+    <usage userId="1" timestamp="1715173939996" />
+  </page>
+  <page path="/admin/discoverRunners.html">
+    <usage userId="1" timestamp="1715091935854" />
+  </page>
+  <page path="/installFullAgent.html">
+    <usage userId="1" timestamp="1715241343173" />
+  </page>
+  <page path="/admin/createObjectFromUrl.html">
+    <usage userId="1" timestamp="1715091855304" />
+  </page>
+  <page path="/admin/editBuildRunners.html">
+    <usage userId="1" timestamp="1715091965946" />
+  </page>
+  <page path="/agentpushInstall.html">
+    <usage userId="1" timestamp="1715241559724" />
+  </page>
+  <page path="/agents.html?tab=agentsStatisticsTab">
+    <usage userId="1" timestamp="1715241533095" />
+  </page>
+  <page path="/favorite/projects">
+    <usage userId="1" timestamp="1715242721819" />
+  </page>
+  <page path="/admin/editRunType.html">
+    <usage userId="1" timestamp="1715091953294" />
+  </page>
+  <page path="/viewQueued.html">
+    <usage userId="1" timestamp="1715241327477" />
+  </page>
+  <page path="/admin/editProject.html">
+    <usage userId="1" timestamp="1715092035190" />
+  </page>
+  <page path="/buildConfiguration/IntegrationsTest_Build">
+    <usage userId="1" timestamp="1715240683749" />
+  </page>
+  <page path="/viewType.html">
+    <usage userId="1" timestamp="1715241304742" />
+  </page>
+  <page path="/admin/admin.html">
+    <usage userId="1" timestamp="1715092030092" />
+  </page>
+  <page path="/admin/editBuildFeatures.html">
+    <usage userId="1" timestamp="1715092089753" />
+  </page>
+  <page path="/agents.html?tab=agent.push">
+    <usage userId="1" timestamp="1715242395092" />
+  </page>
+  <page path="/admin/editBuild.html">
+    <usage userId="1" timestamp="1715173902375" />
+  </page>
+  <page path="/admin/buildTypeHealthStatusItems.html">
+    <usage userId="1" timestamp="1715173913060" />
+  </page>
+  <page path="/admin/editBuildTypeVcsRoots.html">
+    <usage userId="1" timestamp="1715173910992" />
+  </page>
+  <page path="/admin/editVcsRoot.html">
+    <usage userId="1" timestamp="1715236613958" />
+  </page>
+  <page path="/viewLog.html">
+    <usage userId="1" timestamp="1715241335133" />
+  </page>
+  <page path="/agents.html?tab=agentsParametersReport">
+    <usage userId="1" timestamp="1715241531073" />
+  </page>
+  <page path="/admin/projectHealthStatusItems.html">
+    <usage userId="1" timestamp="1715092036035" />
+  </page>
+  <page path="/admin/objectSetup.html">
+    <usage userId="1" timestamp="1715091909294" />
+  </page>
+  <page path="/404.html">
+    <usage userId="1" timestamp="1715241338656" />
+  </page>
+  <page path="/buildTypeHealthStatusItems.html">
+    <usage userId="1" timestamp="1715241304754" />
+  </page>
+  <page path="/agents/overview">
+    <usage userId="1" timestamp="1715242999158" />
+  </page>
+</root>

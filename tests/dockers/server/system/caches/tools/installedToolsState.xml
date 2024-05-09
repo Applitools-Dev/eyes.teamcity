@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<installed-tools>
+  <tool tool-id="maven3_1" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_SKIPPED" skip-reason="TOOL_USAGES_NOT_FOUND" />
+  <tool tool-id="maven3_2" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_SKIPPED" skip-reason="TOOL_USAGES_NOT_FOUND" />
+  <tool tool-id="maven3_5" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_SKIPPED" skip-reason="TOOL_USAGES_NOT_FOUND" />
+  <tool tool-id="maven3_6" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_SKIPPED" skip-reason="TOOL_USAGES_NOT_FOUND" />
+  <tool tool-id="maven" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_SKIPPED" skip-reason="TOOL_USAGES_NOT_FOUND" />
+  <tool tool-id="maven3" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_SKIPPED" skip-reason="TOOL_USAGES_NOT_FOUND" />
+  <tool tool-id="maven3_3" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_SKIPPED" skip-reason="TOOL_USAGES_NOT_FOUND" />
+  <tool tool-id="idea" tool-type="intellij" tool-status="UNINSTALLED" />
+  <tool tool-id="maven3_9" tool-type="maven" tool-installation-source="SYNCH_WITH_EXTERNAL_CHANGES_ON_STARTUP" tool-status="INSTALLATION_COMPLETED" tool-original-id="maven.3.9.6" is-bundled="true" original-name="apache-maven-3.9.6-bin.tar.gz" original-length="9410508" original-last-modified="1715092186874" packed-content-hash="SHA-1EyVvlRu6Io3rAUGWODfISFDVSp0=" />
+  <tool tool-id="maven3_8" tool-type="maven" tool-installation-source="BUNDLED_TOOLS_AUTO_INSTALLER" tool-status="INSTALLATION_SKIPPED" skip-reason="TOOL_USAGES_NOT_FOUND" />
+</installed-tools>
+

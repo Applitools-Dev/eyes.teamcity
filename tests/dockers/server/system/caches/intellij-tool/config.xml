@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config version="1">
+  <status>ok</status>
+  <index-url>https://www.jetbrains.com/teamcity/intellij-tool-index.json</index-url>
+</config>

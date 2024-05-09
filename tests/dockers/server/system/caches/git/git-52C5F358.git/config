@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+	logallrefupdates = false
+[teamcity]
+	remote = https://itai.barhaim%40applitools.com@github.com/applitools/integrations-test.git
+[remote "origin"]
+	url = https://itai.barhaim%40applitools.com@github.com/applitools/integrations-test.git
+	fetch = +refs/*:refs/*
+[gc]
+	auto = -1
+[transfer]
+	unpackLimit = 1
