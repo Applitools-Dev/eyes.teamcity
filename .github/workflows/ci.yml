@@ -36,7 +36,8 @@ jobs:
       run: |
         cd tests
         mvn test
-      env:
-        APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
 
-      run: docker stop teamcity_server
+    - name: Stop Docker image
+      run: |
+        docker stop teamcity-server
+        docker stop teamcity-agent

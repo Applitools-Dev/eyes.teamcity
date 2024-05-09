@@ -22,10 +22,10 @@ public class TeamCityServerTest {
         String currentDirectory = System.getProperty("user.dir");
         System.out.println("Current working directory: " + currentDirectory);
         // Start TeamCity server in a Docker container
-        teamCityContainer = new GenericContainer(DockerImageName.parse("jetbrains/teamcity-server"))
-                .withExposedPorts(8111);
-        teamCityContainer.withFileSystemBind(currentDirectory + "/docker", "/data/teamcity_server/datadir");
-        teamCityContainer.start();
+//        teamCityContainer = new GenericContainer(DockerImageName.parse("jetbrains/teamcity-server"))
+//                .withExposedPorts(8111);
+//        teamCityContainer.withFileSystemBind(currentDirectory + "/docker", "/data/teamcity_server/datadir");
+//        teamCityContainer.start();
 
         // Set up WebDriver
         ChromeOptions options = new ChromeOptions();
@@ -39,7 +39,8 @@ public class TeamCityServerTest {
 
     @Test
     public void testTeamCityServer() {
-        String serverUrl = "http://localhost:" + teamCityContainer.getMappedPort(8111);
+//        String serverUrl = "http://localhost:" + teamCityContainer.getMappedPort(8111);
+        String serverUrl = "http://localhost:8111";
         driver.get(serverUrl);
         eyes.open(driver, "TeamCity Server", "TeamCity Eyes Plugin", new RectangleSize(1200,800));
 
@@ -91,6 +92,6 @@ public class TeamCityServerTest {
     public void tearDown() {
         driver.quit();
         eyes.abortIfNotClosed();
-        teamCityContainer.stop();
+//        teamCityContainer.stop();
     }
 }
