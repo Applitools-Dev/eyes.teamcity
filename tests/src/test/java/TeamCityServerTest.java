@@ -85,6 +85,9 @@ public class TeamCityServerTest {
             }
         }
         eyes.checkWindow(driver.getTitle());
+        driver.get("http://localhost:8111/buildConfiguration/IntegrationsTest_Build");
+        driver.findElement(By.cssSelector("button[data-test='run-build']")).click();
+        eyes.checkWindow(driver.getTitle());
         eyes.close();
     }
 
