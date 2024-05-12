@@ -9,7 +9,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testcontainers.containers.GenericContainer;
-import org.testcontainers.utility.DockerImageName;
+
+import java.util.concurrent.TimeUnit;
 
 public class TeamCityServerTest {
 
@@ -39,7 +40,6 @@ public class TeamCityServerTest {
 
     @Test
     public void testTeamCityServer() {
-//        String serverUrl = "http://localhost:" + teamCityContainer.getMappedPort(8111);
         String serverUrl = "http://localhost:8111";
         driver.get(serverUrl);
         eyes.open(driver, "TeamCity Server", "TeamCity Eyes Plugin", new RectangleSize(1200,800));
@@ -55,11 +55,7 @@ public class TeamCityServerTest {
 
             String title = driver.getTitle();
             System.out.println("Time elapsed: " + timeElapsed + "s ; Page title: '" + title + "'");
-            try {
-                Thread.sleep(5000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            sleep(5000);
         }
         eyes.checkWindow("login");
 
@@ -72,23 +68,34 @@ public class TeamCityServerTest {
 
         // Find the login button and click it
         driver.findElement(By.name("submitLogin")).click();
-        startTime = System.currentTimeMillis();
-        while (!("Favorite Projects — TeamCity".equals(driver.getTitle()))) {
-            int timeElapsed = (int) (System.currentTimeMillis() - startTime) / 1000;
-            if (timeElapsed >= timeout) {
-                throw new RuntimeException("Timed out waiting for favorite projects page to load");
-            }
-            try {
-                Thread.sleep(250);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-        }
+        waitForPage("Favorite Projects — TeamCity", timeout);
         eyes.checkWindow(driver.getTitle());
         driver.get("http://localhost:8111/buildConfiguration/IntegrationsTest_Build");
+        waitForPage("Build — TeamCity", timeout);
+        eyes.checkWindow(driver.getTitle());
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.cssSelector("button[data-test='run-build']")).click();
         eyes.checkWindow(driver.getTitle());
         eyes.close();
+    }
+
+    private void waitForPage(String title, long timeout) {
+        long startTime = System.currentTimeMillis();
+        while (!(title.equals(driver.getTitle()))) {
+            int timeElapsed = (int) (System.currentTimeMillis() - startTime) / 1000;
+            if (timeElapsed >= timeout) {
+                throw new RuntimeException("Timed out waiting for '" + title + "' page to load");
+            }
+            sleep(250);
+        }
+    }
+
+    private static void sleep(int millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @AfterClass
