@@ -90,6 +90,7 @@ public class TeamCityServerTest {
                 throw new RuntimeException("Timed out waiting for '" + prefixTitle + "' page to load");
             }
             sleep(250);
+            pageTitle = driver.getTitle();
         }
     }
 
