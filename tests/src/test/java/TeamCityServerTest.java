@@ -76,15 +76,18 @@ public class TeamCityServerTest {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.cssSelector("button[data-test='run-build']")).click();
         eyes.checkWindow(driver.getTitle());
+        driver.findElements(By.cssSelector(".BuildDetails__container--qM button.Details__button--h4")).get(0).click();
+        waitForPage("Build / #", timeout);
         eyes.close();
     }
 
-    private void waitForPage(String title, long timeout) {
+    private void waitForPage(String prefixTitle, long timeout) {
         long startTime = System.currentTimeMillis();
-        while (!(title.equals(driver.getTitle()))) {
+        String pageTitle = driver.getTitle();
+        while (pageTitle == null || pageTitle.startsWith(prefixTitle)) {
             int timeElapsed = (int) (System.currentTimeMillis() - startTime) / 1000;
             if (timeElapsed >= timeout) {
-                throw new RuntimeException("Timed out waiting for '" + title + "' page to load");
+                throw new RuntimeException("Timed out waiting for '" + prefixTitle + "' page to load");
             }
             sleep(250);
         }
