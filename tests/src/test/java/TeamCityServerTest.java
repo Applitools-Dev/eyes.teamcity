@@ -84,7 +84,7 @@ public class TeamCityServerTest {
     private void waitForPage(String prefixTitle, long timeout) {
         long startTime = System.currentTimeMillis();
         String pageTitle = driver.getTitle();
-        while (pageTitle == null || pageTitle.startsWith(prefixTitle)) {
+        while (pageTitle == null || !pageTitle.startsWith(prefixTitle)) {
             int timeElapsed = (int) (System.currentTimeMillis() - startTime) / 1000;
             if (timeElapsed >= timeout) {
                 throw new RuntimeException("Timed out waiting for '" + prefixTitle + "' page to load");
