@@ -28,9 +28,10 @@ jobs:
       run: |
         cp target/applitools-eyes.zip tests/dockers/server/plugins
         chmod -R 777 tests/dockers
+        docker build -t teamcity-agent:latest .
         docker network create teamcity-network
         docker run -d -p 8111:8111 -v `pwd`/tests/dockers/server:/data/teamcity_server/datadir --network teamcity-network --name=teamcity-server jetbrains/teamcity-server:2024.03.1-linux
-        docker run -d -e SERVER_URL=http://teamcity-server:8111 -e OWN_ADDRESS=teamcity-agent -e AGENT_NAME=my-docker-agent -v `pwd`/tests/dockers/agent:/data/teamcity_agent/conf --network teamcity-network --name=teamcity-agent jetbrains/teamcity-minimal-agent:2024.03.1-linux
+        docker run -d -e SERVER_URL=http://teamcity-server:8111 -e OWN_ADDRESS=teamcity-agent -e AGENT_NAME=my-docker-agent -v `pwd`/tests/dockers/agent/data/conf:/data/teamcity_agent/conf --network teamcity-network --name=teamcity-agent teamcity-agent:latest
         sleep 30
         docker exec -u root teamcity-agent chown -R buildagent:buildagent /opt/buildagent/work /opt/buildagent/temp /opt/buildagent/system
 
