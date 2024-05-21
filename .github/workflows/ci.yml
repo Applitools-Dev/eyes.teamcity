@@ -27,7 +27,7 @@ jobs:
     - name: Run Docker image
       run: |
         cp target/applitools-eyes.zip tests/dockers/server/plugins
-        chmod -R 777 tests/dockers
+        chmod -R 777 tests/dockers/agent
         pushd tests/dockers
         docker build -t teamcity-agent:latest .
         popd
