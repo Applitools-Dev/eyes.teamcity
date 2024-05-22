@@ -5,13 +5,12 @@
   <settings>
     <parameters />
     <build-runners>
-      <runner id="Test" name="Test" type="nodejs-runner">
+      <runner id="Test" name="Test" type="simpleRunner">
         <parameters>
-          <param name="plugin.docker.imageId" value="node:lts" />
-          <param name="plugin.docker.imagePlatform" value="linux" />
-          <param name="shellScript"><![CDATA[npm ci
+          <param name="script.content"><![CDATA[npm ci
 npm run test]]></param>
           <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
     </build-runners>
