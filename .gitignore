@@ -3,3 +3,4 @@ target
 **/*.iml
 **/.DS_STORE
 
+tests/dockers/server/system/artifacts/IntegrationsTest/Build/*/.teamcity
