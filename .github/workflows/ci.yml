@@ -28,7 +28,7 @@ jobs:
       run: |
         cp target/applitools-eyes.zip tests/dockers/server/plugins
         chmod -R 777 tests/dockers
-        pushd tests/dockers/agents
+        pushd tests/dockers/agent
         docker build -t teamcity-agent:latest .
         popd
         docker network create teamcity-network
