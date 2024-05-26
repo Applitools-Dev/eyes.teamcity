@@ -74,6 +74,14 @@ public class TeamCityServerTest {
         waitForPage("Build — TeamCity", timeout);
         eyes.checkWindow(driver.getTitle());
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+
+        //////////////
+        driver.findElement(By.cssSelector("button.OverviewSystemProblems__showDetails--tl")).click();
+        eyes.checkWindow(driver.getTitle());
+        /////////////
+
+        // Find the 'Run' button and click it
         driver.findElement(By.cssSelector("button[data-test='run-build']")).click();
         eyes.checkWindow(driver.getTitle());
         driver.findElements(By.cssSelector(".BuildDetails__container--qM button.Details__button--h4")).get(0).click();
