@@ -4,3 +4,5 @@ target
 **/.DS_STORE
 
 tests/dockers/server/system/artifacts/IntegrationsTest/Build/*/.teamcity
+tests/dockers/server/system/caches
+tests/dockers/server/system/pluginData/audit/configHistory
